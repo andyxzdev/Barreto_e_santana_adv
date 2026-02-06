@@ -1,42 +1,246 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.Contatos_topo {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  padding-left: 2.5vw;
+  background-color: #1f1f1f;
+
+  & .infos {
+    display: flex;
+    padding-right: 65vw;
+
+    & .contato1,
+    .contato2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & img {
+        width: 1.2vw;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.Hero {
+  width: 100%;
+  height: 85vh;
+  background-image: url("./assets/banners/Banner-topo.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0 2.5vw;
+  z-index: -1000;
+
+  & .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    text-align: left;
+    width: 60%;
+    margin-top: 30vh;
+    gap: 40px;
+
+    & h1 {
+      color: #f4df8f;
+      font-weight: 400;
+      font-size: 3.8rem;
+    }
+
+    & h3 {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 400;
+      width: 70%;
+    }
+
+    & .Button_hero {
+      width: 21vw;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background-color: #f4df8f;
+      color: #1f1f1f;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    & .Button_hero:hover {
+      border: solid 2px #f4df8f;
+      border-radius: 0px;
+      background-color: transparent;
+      color: #f4df8f;
+    }
+  }
+}
+
+.Muito_alem {
+  width: 100%;
+  height: 60vh;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  .infos {
+    background-color: #1f1f1f;
+    width: 60%;
+    height: 50vh;
+    border-radius: 40px;
+    padding: 30px;
+    margin-top: -40px;
+    margin-left: 20vw;
+    position: absolute;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+    .Logo_pequena {
+      width: 2.5vw;
+      margin-top: 1vh;
+    }
+
+    h1 {
+      color: #f4df8f;
+      font-size: 4rem;
+      font-weight: 500;
+      margin-top: 5vh;
+    }
+
+    h3 {
+      color: #fff;
+      margin-top: 5vh;
+    }
+
+    .Arrow {
+      width: 2vw;
+      margin-top: 4vh;
+    }
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.Sobre {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+
+  .Titulo {
+    font-size: 2.3rem;
+    color: #a98c58;
+  }
+
+  .infos {
+    margin-top: 10vh;
+    .adv1,
+    .adv2 {
+      display: flex;
+      align-items: center;
+      padding: 0 80px;
+
+      .Img_dra1,
+      .Img_dra2 {
+        width: 55vw;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+        color: #a98c58;
+      }
+
+      li {
+        margin: 40px 0;
+
+        h3 {
+          font-size: 1.3rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .adv1 {
+      text-align: left;
+    }
+    .adv2 {
+      text-align: right;
+    }
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.Resultados {
+  width: 100%;
+  height: 90vh;
+  background-color: #1f1f1f;
+  border-radius: 120px 120px 0px 0px;
+}
+
+.Areas {
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+  padding: 10vh;
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 50vw;
+    }
+
+    .textos {
+      .titulo {
+        text-align: center;
+        h1 {
+          color: #f4df8f;
+          font-size: 5rem;
+          font-weight: 400;
+        }
+        h3 {
+          color: #ffffff;
+          font-size: 1.7rem;
+          font-weight: 400;
+          margin-top: 30px;
+        }
+      }
+
+      .textos_areas {
+        display: grid;
+
+        .coluna {
+          display: flex;
+        }
+        .area1 {
+          padding: 30px;
+          margin-top: 70px;
+
+          h1 {
+            color: #fff;
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 1.6rem;
+          }
+
+          li {
+            color: #fff;
+            margin-top: 20px;
+
+            p {
+              font-weight: 300;
+              margin-top: 0px;
+              font-size: 0.9rem;
+            }
+          }
+
+          img {
+            width: 1.2vw;
+          }
+        }
+      }
+    }
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
