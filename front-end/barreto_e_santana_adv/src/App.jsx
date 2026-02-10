@@ -12,9 +12,14 @@ import Arrow from "./assets/icons/arrow.svg";
 import ImgDra1 from "./assets/arts/art1.png";
 import ImgDra2 from "./assets/arts/art2.png";
 import ImgAreas from "./assets/arts/art_areas_atuacao.png";
+import BannerBaixo from "./assets/banners/art3.png";
 
 import Header from "../src/assets/components/header/Header.jsx";
 import "../src/assets/components/header/Header.css";
+import Results from "../src/assets/components/results/Results.jsx";
+import "../src/assets/components/results/Results.css";
+import FeedbackCarousel from "../src/assets/components/carroussel/FeedbackCarousel.jsx";
+import "../src/assets/components/carroussel/FeedbackCarousel.css";
 
 function App() {
   useEffect(() => {
@@ -123,9 +128,7 @@ function App() {
           </div>
         </section>
 
-        <section className="Resultados">
-          {/* <Resultados></Resultados> */}
-        </section>
+        <Results />
 
         <section className="Areas">
           <div className="infos">
@@ -249,6 +252,47 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <FeedbackCarousel />
+
+        <section className="Banner_baixo">
+          <img
+            src={BannerBaixo}
+            alt=""
+            style={{
+              width: "100%",
+              paddingLeft: "120px",
+              paddingRight: "120px",
+            }}
+            className="banner_baixo"
+          />
+        </section>
+
+        <section className="formulario">
+          <div className="infos">
+            <h1>Como podemos te ajudar?</h1>
+            <h3>
+              <li>
+                <h3>
+                  Estamos prontas para te orientar e defender seus direitos.
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Cada caso é único. Por isso, oferecemos um atendimento
+                  próximo, personalizado e focado na melhor estratégia jurídica
+                  para você.
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Preencha o formulário ao lado e nossa equipe entrará em
+                  contato o mais breve possível.
+                </h3>
+              </li>
+            </h3>
           </div>
         </section>
       </main>
