@@ -20,6 +20,8 @@ import Results from "../src/assets/components/results/Results.jsx";
 import "../src/assets/components/results/Results.css";
 import FeedbackCarousel from "../src/assets/components/carroussel/FeedbackCarousel.jsx";
 import "../src/assets/components/carroussel/FeedbackCarousel.css";
+import Forms from "../src/assets/components/forms/Forms.jsx";
+import "../src/assets/components/forms/Forms.css";
 
 function App() {
   useEffect(() => {
@@ -270,14 +272,14 @@ function App() {
           />
         </section>
 
-        <section className="formulario">
+        <section className="Formulario">
           <div className="infos">
-            <h1>Como podemos te ajudar?</h1>
-            <h3>
+            <div className="textos">
+              <h1>Como podemos te ajudar?</h1>
               <li>
-                <h3>
+                <h2 className="">
                   Estamos prontas para te orientar e defender seus direitos.
-                </h3>
+                </h2>
               </li>
               <li>
                 <h3>
@@ -292,7 +294,9 @@ function App() {
                   contato o mais breve possível.
                 </h3>
               </li>
-            </h3>
+            </div>
+
+            <Forms />
           </div>
         </section>
       </main>

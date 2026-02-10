@@ -241,3 +241,41 @@
     }
   }
 }
+
+.Formulario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+
+  .infos {
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+
+    .textos {
+      h1 {
+        color: #a98c58;
+        font-size: 4rem;
+        font-weight: bold;
+      }
+
+      li {
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        h2 {
+          font-weight: 600;
+        }
+
+        h3 {
+          color: #1f1f1f;
+          font-size: 1.6rem;
+          font-weight: 300;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
