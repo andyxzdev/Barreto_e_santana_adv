@@ -22,6 +22,8 @@ import FeedbackCarousel from "../src/assets/components/carroussel/FeedbackCarous
 import "../src/assets/components/carroussel/FeedbackCarousel.css";
 import Forms from "../src/assets/components/forms/Forms.jsx";
 import "../src/assets/components/forms/Forms.css";
+import Footer from "../src/assets/components/footer/Footer.jsx";
+import "../src/assets/components/footer/Footer.css";
 
 function App() {
   useEffect(() => {
@@ -299,6 +301,7 @@ function App() {
             <Forms />
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );
