@@ -16,7 +16,6 @@ export async function receberContato(req, res) {
 
     return res.status(200).json("Mensagem enviada com sucesso");
   } catch (error) {
-    console.error("🔥 ERRO REAL DO BACKEND 🔥");
     console.error(error);
     return res.status(500).json(error.message);
   }
