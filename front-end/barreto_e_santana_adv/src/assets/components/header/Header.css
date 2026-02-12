@@ -6,10 +6,38 @@ header {
   justify-content: space-between;
   background-color: #111111;
   padding: 0 2rem;
-  margin-top: -1px;
 
-  & .Logo {
-    width: 25vw;
+  & .Contatos_topo {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    padding-left: 2.5vw;
+    background-color: #1f1f1f;
+
+    & .infos {
+      display: flex;
+      padding-right: 65vw;
+
+      & .contato1,
+      .contato2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & img {
+          width: 1.2vw;
+        }
+
+        & p {
+          font-size: 1.2rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  & .Logo img {
+    width: 15vw;
     height: auto;
   }
 
@@ -24,9 +52,9 @@ header {
   }
 
   & nav {
+    width: 100%;
     display: flex;
     align-items: center;
-    padding-left: 15rem;
 
     & ul {
       width: 100%;
@@ -49,7 +77,7 @@ header {
 
       & .ButtonTopo {
         height: 3rem;
-        width: 55vw;
+        width: 180px;
         border-radius: 20px;
         font-size: 1.2rem;
         cursor: pointer;

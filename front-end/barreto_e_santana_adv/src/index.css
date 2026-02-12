@@ -2,23 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Cormorant Garamond", serif; */
   font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   list-style: none;
   text-decoration: none;
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
 }
 
 body {
   width: 100%;
-  height: auto;
   flex-direction: column;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h2,

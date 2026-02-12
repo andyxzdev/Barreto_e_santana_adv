@@ -1,29 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 
-import IconPhone from "./assets/icons/phone.svg";
-import IconMail from "./assets/icons/mail.svg";
-import IconeDirCivil from "./assets/icons/civil.svg";
-import LogoPequena from "./assets/icons/logo.png";
-import Arrow from "./assets/icons/arrow.svg";
+import IconPhone from "../../assets/icons/phone.svg";
+import IconMail from "../../assets/icons/mail.svg";
+import IconeDirCivil from "../../assets/icons/civil.svg";
+import LogoPequena from "../../assets/icons/logo.png";
+import IconWorld from "../../assets/icons/world.svg";
+import IconBusiness2 from "../../assets/icons/business2.svg";
+import IconBusiness from "../../assets/icons/business.svg";
+import IconLocalizationYellow from "../../assets/icons/localization2.svg";
+import IconPerson from "../../assets/icons/person.svg";
+import Arrow from "../../assets/icons/arrow.svg";
 
-import ImgDra1 from "./assets/arts/art1.png";
-import ImgDra2 from "./assets/arts/art2.png";
-import ImgAreas from "./assets/arts/art_areas_atuacao.png";
-import BannerBaixo from "./assets/banners/art3.png";
+import ImgAtendimento from "../../assets/arts/art3.png";
+import ImgAreas from "../../assets/arts/art_areas_atuacao.png";
+import BannerBaixo from "../../assets/banners/art3.png";
 
-import Header from "../src/assets/components/header/Header.jsx";
-import "../src/assets/components/header/Header.css";
-import Results from "../src/assets/components/results/Results.jsx";
-import "../src/assets/components/results/Results.css";
-import FeedbackCarousel from "../src/assets/components/carroussel/FeedbackCarousel.jsx";
-import "../src/assets/components/carroussel/FeedbackCarousel.css";
-import Forms from "../src/assets/components/forms/Forms.jsx";
-import "../src/assets/components/forms/Forms.css";
-import Footer from "../src/assets/components/footer/Footer.jsx";
-import "../src/assets/components/footer/Footer.css";
+import Header from "../../assets/components/header/Header.jsx";
+import "../../assets/components/header/Header.css";
+import Results from "../../assets/components/results/Results.jsx";
+import "../../assets/components/results/Results.css";
+import FeedbackCarousel from "../../assets/components/carroussel/FeedbackCarousel.jsx";
+import "../../assets/components/carroussel/FeedbackCarousel.css";
+import Forms from "../../assets/components/forms/Forms.jsx";
+import "../../assets/components/forms/Forms.css";
+import Footer from "../../assets/components/footer/Footer.jsx";
+import "../../assets/components/footer/Footer.css";
 
 function App() {
   useEffect(() => {
@@ -51,10 +55,25 @@ function App() {
           </div>
         </div>
         <Header />
-        <section className="Hero">
+        {/* <section className="Hero">
           <div className="infos">
             <h1>
-              Defendendo seus direitos com ética, estratégia e compromisso.
+              Defendendo seus direitos com ética,<br></br>estratégia e
+              compromisso.
+            </h1>
+            <h3>
+              Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
+              soluções jurídicas claras, humanas e eficazes para cada cliente.
+            </h3>
+            <button className="Button_hero">Conheça a Barreto & Santana</button>
+          </div>
+        </section> */}
+
+        <section className="Topo">
+          <div className="infos">
+            <h1>
+              Defendendo seus direitos com ética,<br></br>estratégia e
+              compromisso.
             </h1>
             <h3>
               Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
@@ -80,54 +99,68 @@ function App() {
           </div>
         </section>
 
-        {/* SECTION SOBRE */}
-
-        <section className="Sobre">
+        <section className="Atendimento">
           <div className="Titulo">
             <h1>
-              Quem está por trás<br></br>da Barreto & Santana
+              Atendimento em Belo Horizonte<br></br>e em todo o Brasil
             </h1>
           </div>
 
           <div className="infos">
-            <div className="adv1">
+            <div className="texto_e_imagem">
               <div className="texto">
-                <h1>Dra. Anna Clara Barreto</h1>
-                <li>
-                  <h3>
-                    Advogada com atuação sólida nas áreas de Direito Civil,
-                    Família e Consumidor.
-                  </h3>
-                </li>
-                <li>
-                  <h3>
-                    Reconhecida pela postura estratégica, atendimento humanizado
-                    e dedicação em buscar as melhores soluções jurídicas para
-                    seus clientes.
-                  </h3>
-                </li>
-              </div>
-              <img src={ImgDra1} alt="" className="Img_dra1" />
-            </div>
-            <div className="adv2">
-              <img src={ImgDra2} alt="" className="Img_dra2" />
+                <h1>
+                  Atendimento Jurídico Especializado em Belo Horizonte e em Todo
+                  o Brasil
+                </h1>
 
-              <div className="texto">
-                <h1>Dra. Anna Clara Barreto</h1>
-                <li>
-                  <h3>
-                    Advogada com atuação sólida nas áreas de Direito Civil,
-                    Família e Consumidor.
-                  </h3>
-                </li>
-                <li>
-                  <h3>
-                    Reconhecida pela postura estratégica, atendimento humanizado
-                    e dedicação em buscar as melhores soluções jurídicas para
-                    seus clientes.
-                  </h3>
-                </li>
+                <h2>
+                  Atuação estratégica em Direito do Trabalho com atendimento
+                  presencial em BH e 100% online para todo o território
+                  nacional.
+                </h2>
+                <div className="icon_e_infos">
+                  <img src={IconLocalizationYellow} alt="" />
+                  <li>
+                    <h3>Belo Horizonte – MG</h3>
+                    <p>
+                      Atendimento presencial com estrutura completa e suporte
+                      jurídico personalizado
+                    </p>
+                  </li>
+                </div>
+                <div className="icon_e_infos">
+                  <img src={IconWorld} alt="" />
+                  <li>
+                    <h3>Atendimento Online Nacional</h3>
+                    <p>
+                      Consultoria e acompanhamento processual para clientes em
+                      qualquer estado do Brasil.
+                    </p>
+                  </li>
+                </div>
+                <div className="icon_e_infos">
+                  <img src={IconBusiness2} alt="" />
+                  <li>
+                    <h3>Especialização em Direito do Trabalho</h3>
+                    <p>
+                      Atuação focada na defesa técnica e estratégica dos seus
+                      direitos trabalhistas
+                    </p>
+                  </li>
+                </div>
+                <div className="icon_e_infos">
+                  <img src={IconPerson} alt="" />
+                  <li>
+                    <h3>Canal Direto com o Advogado</h3>
+                    <p>
+                      Comunicação clara, acompanhamento contínuo e suporte
+                      rápido.
+                    </p>
+                  </li>
+                </div>
               </div>
+              <img src={ImgAtendimento} alt="" className="Img_dra1" />
             </div>
           </div>
         </section>
@@ -142,8 +175,7 @@ function App() {
                 <h1>Áreas de Atuação</h1>
                 <h3>
                   Atuamos de forma estratégica nas principais áreas do Direito,
-                  <br></br>
-                  sempre com foco em soluções claras e eficientes.
+                  <br></br>sempre com foco em soluções claras e eficientes.
                 </h3>
               </div>
 

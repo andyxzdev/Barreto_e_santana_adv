@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Header.css";
 import Logo from "../../logo/Logo2.png";
 
+import { Link } from "react-router-dom";
+
 const Header = ({ customStyle }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -22,14 +24,19 @@ const Header = ({ customStyle }) => {
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
+            <Link to="/home" onClick={toggleMenu}>
+              Início
+            </Link>
+          </li>
+          <li>
             <a href="#valores" onClick={toggleMenu}>
               Valores
             </a>
           </li>
           <li>
-            <a href="#sobre_nos" onClick={toggleMenu}>
+            <Link to="/sobre" onClick={toggleMenu}>
               Sobre nós
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#Resultados" onClick={toggleMenu}>
