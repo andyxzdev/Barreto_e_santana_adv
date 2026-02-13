@@ -116,11 +116,11 @@
   & .infos-topo {
     display: flex;
     flex-direction: column;
-    align-items: last baseline;
+    align-items: left;
     text-align: left;
-    width: 50%;
+    width: 66%;
     gap: 40px;
-    padding: 15vh 0;
+    padding: 15vh 120px 0;
 
     @include between($md, $lg) {
       margin-top: -10px;
@@ -144,7 +144,7 @@
     & h1 {
       color: #f4df8f;
       font-weight: 400;
-      font-size: 3.8rem;
+      font-size: 4rem;
 
       @include between($xl, $xxl) {
         font-size: 3rem;
