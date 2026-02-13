@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./FeedbackCarousel.css";
+import "./FeedbackCarousel.scss";
 
 const feedbacks = [
   {

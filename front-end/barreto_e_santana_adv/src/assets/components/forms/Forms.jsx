@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios"; // axios é usado para fazer requisições HTTP, que nesse caso é pro envio do formulario
-import "./Forms.css";
+import "./Forms.scss";
 
 function Forms() {
   const [formData, setFormData] = useState({

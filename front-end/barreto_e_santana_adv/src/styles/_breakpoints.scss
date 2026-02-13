@@ -1,0 +1,27 @@
+// src/styles/_breakpoints.scss
+
+$xxs: 393px;
+$xs: 480px; // Extra small (mobile)
+$sm: 820px; // Small (tablet)
+$md: 1120px; // Medium (desktop pequeno)
+$lg: 1366px; // Large (desktop médio)
+$xl: 1504px; // Extra large (desktop grande)
+$xxl: 1560px; // 2X large (desktop muito grande)
+
+@mixin max($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin min($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

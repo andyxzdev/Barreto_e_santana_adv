@@ -1,3 +1,5 @@
+@use "../../../styles/breakpoints" as *;
+
 .results {
   padding: 10vh 20px;
   text-align: center;
@@ -5,6 +7,14 @@
   height: 70vh;
   background-color: #1f1f1f;
   border-radius: 120px 120px 0px 0px;
+
+  @include between($md, $lg) {
+    height: 90vh;
+  }
+  @include between($xxs, $xs) {
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 40px;
+  }
 }
 
 .results h1 {
@@ -12,12 +22,30 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #f5d88c;
+
+  @include between($md, $lg) {
+    font-size: 3.5rem;
+    margin-top: 90px;
+  }
+
+  @include between($xs, $sm) {
+    font-size: 3rem;
+  }
+  @include between($xxs, $xs) {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
 }
 
 .results p {
   font-size: 1.4rem;
   color: #cfcfcf;
   margin-top: 60px;
+
+  @include between($xxs, $xs) {
+    font-size: 1.2rem;
+    margin-top: 40px;
+  }
 }
 
 .results-grid {
@@ -26,6 +54,16 @@
   align-items: center;
   position: relative;
   margin-top: 7vh;
+  gap: 230px;
+
+  @include between($xs, $sm) {
+    gap: 80px;
+  }
+
+  @include between($xxs, $xs) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .result-item {
@@ -51,21 +89,4 @@
   width: 1px;
   height: 80px;
   background: rgba(255, 255, 255, 0.2);
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .results-grid {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .divider {
-    width: 60px;
-    height: 1px;
-  }
-
-  .result-number {
-    font-size: 3rem;
-  }
 }

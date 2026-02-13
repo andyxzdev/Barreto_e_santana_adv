@@ -1,3 +1,5 @@
+@use "../../../styles/breakpoints" as *;
+
 .feedback-section {
   width: 100%;
   height: 80vh;
@@ -6,10 +8,40 @@
   text-align: center;
   border-radius: 0px 0px 120px 120px;
 
+  @include between($md, $lg) {
+    height: 120vh;
+  }
+
+  @include between($xs, $sm) {
+    height: 80vh;
+  }
+
+  @include between($xxs, $xs) {
+    height: 80vh;
+    border-radius: 0px 0px 40px 40px;
+    padding: 1vh;
+  }
+
   h1 {
     color: #f4df8f;
     font-size: 5rem;
     font-weight: bold;
+
+    @include between($xl, $xxl) {
+      font-size: 4rem;
+    }
+
+    @include between($md, $lg) {
+      font-size: 3.8rem;
+    }
+
+    @include between($xs, $sm) {
+      font-size: 3rem;
+    }
+
+    @include between($xxs, $xs) {
+      font-size: 2.4rem;
+    }
   }
 }
 
@@ -19,6 +51,10 @@
   justify-content: center;
   margin-top: 80px;
   position: relative;
+
+  @include between($xxs, $xs) {
+    gap: 30px;
+  }
 
   .nav {
     background: none;
@@ -31,6 +67,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
 
+    @include between($xs, $sm) {
+      font-size: 2rem;
+      width: 45px;
+      height: 45px;
+    }
+
     &:hover {
       background-color: #f4df8f;
       color: #1f1f1f;
@@ -42,9 +84,17 @@
     width: 100%;
     margin: 0 40px;
 
+    @include between($xxs, $xs) {
+      margin: 0px;
+    }
+
     .track {
       display: flex;
       gap: 30px;
+
+      @include between($xs, $sm) {
+        gap: 60px;
+      }
     }
   }
   .card {
@@ -54,6 +104,16 @@
     border-radius: 12px;
     text-align: center;
 
+    @include between($xs, $sm) {
+      width: 45vw;
+    }
+
+    @include between($xxs, $xs) {
+      width: 60vw;
+      height: auto;
+      padding: 20px;
+    }
+
     .header {
       display: flex;
       align-items: center;
@@ -62,11 +122,20 @@
       margin-bottom: 25px;
       padding-left: 40px;
 
+      @include between($xs, $sm) {
+        padding-left: 40px;
+      }
+
       img {
         width: 100px;
         height: 70px;
         border-radius: 50%;
         object-fit: cover;
+
+        @include between($xs, $sm) {
+          width: 80px;
+          height: 60px;
+        }
       }
 
       div {
@@ -94,6 +163,11 @@
       line-height: 1.6;
       max-width: 700px;
       margin: 0 auto 25px;
+
+      @include between($xs, $sm) {
+        font-size: 0.9rem;
+        max-width: 100%;
+      }
     }
 
     .stars {

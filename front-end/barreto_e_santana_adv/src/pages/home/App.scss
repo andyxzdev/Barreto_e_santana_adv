@@ -1,0 +1,885 @@
+@use "../../styles/breakpoints" as *;
+
+.Contatos-topo {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  background-color: #1f1f1f;
+
+  @include between($xxs, $xs) {
+    height: 12vh;
+  }
+
+  & .infos {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+
+    @include between($xl, $xxl) {
+      gap: 30px;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 25px 70px;
+      text-align: center;
+    }
+
+    & .contato1 {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+
+      @include between($xxs, $xs) {
+        margin-left: 0px;
+      }
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    & .contato2 {
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.Topo {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../assets/banners/Banner-topo.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include between($md, $lg) {
+    height: 85vh;
+  }
+
+  @include between($xs, $sm) {
+    background-image: url("../../assets/banners/Banner-topo2.jpg");
+
+    height: 75vh;
+  }
+
+  @include between($xxs, $xs) {
+    background-image: url("../../assets/banners/Banner-topo2.jpg");
+
+    height: 75vh;
+  }
+
+  & .infos-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    text-align: left;
+    width: 50%;
+    gap: 40px;
+    padding: 15vh 0;
+
+    @include between($md, $lg) {
+      margin-top: -10px;
+      margin-left: 20px;
+    }
+
+    @include between($xs, $sm) {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include between($xxs, $xs) {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    & h1 {
+      color: #f4df8f;
+      font-weight: 400;
+      font-size: 3.8rem;
+
+      @include between($xl, $xxl) {
+        font-size: 3rem;
+      }
+
+      @include between($md, $lg) {
+        font-size: 2.5rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 2.5rem;
+        margin-top: 23vh;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 1.9rem;
+        margin-top: 30vh;
+      }
+    }
+
+    & h3 {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 400;
+      width: 70%;
+
+      @include between($md, $lg) {
+        font-size: 1rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 1rem;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 0.8rem;
+        width: 90%;
+      }
+    }
+
+    & .Button_hero {
+      width: 21vw;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background-color: #f4df8f;
+      color: #1f1f1f;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: 0.5s;
+
+      @include between($md, $lg) {
+        width: 20vw;
+        height: 30px;
+        font-size: 1rem;
+      }
+
+      @include between($xs, $sm) {
+        width: 50vw;
+        height: 35px;
+      }
+
+      @include between($xxs, $xs) {
+        width: 70vw;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+
+    & .Button_hero:hover {
+      border: solid 2px #f4df8f;
+      border-radius: 0px;
+      background-color: transparent;
+      color: #f4df8f;
+    }
+  }
+}
+
+.Muito_alem {
+  width: 100%;
+  height: 80vh;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .infoss {
+    background-color: #1f1f1f;
+    width: 60%;
+    height: 50vh;
+    border-radius: 40px;
+    padding: 30px;
+    margin-top: 13vh;
+    margin-left: 20vw;
+
+    @include between($xl, $xxl) {
+      width: 60vw;
+      height: 60vh;
+    }
+
+    @include between($md, $lg) {
+      width: 60vw;
+      height: 70vh;
+    }
+
+    @include between($xs, $sm) {
+      width: 80vw;
+      height: 47vh;
+      margin-left: 10vw;
+    }
+
+    @include between($xxs, $xs) {
+      width: 90vw;
+      height: 50vh;
+      margin-left: 5vw;
+    }
+
+    .Logo_pequena {
+      width: 2.5vw;
+      margin-top: 1vh;
+
+      @include between($xs, $sm) {
+        width: 7vw;
+      }
+
+      @include between($xxs, $xs) {
+        width: 10vw;
+      }
+    }
+
+    h1 {
+      color: #f4df8f;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-top: 5vh;
+
+      @include between($xl, $xxl) {
+        font-size: 3.5rem;
+      }
+
+      @include between($md, $lg) {
+        font-size: 3rem;
+        margin-top: 6vh;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 2.7rem;
+        margin-top: 2vh;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 2rem;
+        margin-top: 2vh;
+      }
+    }
+
+    h3 {
+      color: #fff;
+      margin-top: 5vh;
+
+      @include between($xl, $xxl) {
+        font-size: 1.2rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 0.9rem;
+        margin-top: 2vh;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 0.9rem;
+        margin-top: 2vh;
+      }
+    }
+
+    .Arrow {
+      width: 2vw;
+      margin-top: 4vh;
+
+      @include between($xl, $xxl) {
+        margin-top: 7vh;
+      }
+
+      @include between($xs, $sm) {
+        width: 5vw;
+        font-size: 3rem;
+        margin-top: 4vh;
+      }
+
+      @include between($xxs, $xs) {
+        width: 5vw;
+        font-size: 3rem;
+        margin-top: 4vh;
+      }
+    }
+  }
+}
+
+.Atendimento {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+
+  @include between($md, $lg) {
+    margin-top: 70px;
+  }
+
+  @include between($xs, $sm) {
+    margin-top: -150px;
+  }
+
+  .Titulo {
+    font-size: 2.3rem;
+    color: #a98c58;
+
+    h1 {
+      font-weight: bold;
+
+      @include between($xl, $xxl) {
+        font-size: 4rem;
+      }
+
+      @include between($md, $lg) {
+        font-size: 3rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 3rem;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .infos {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+
+    @include between($xl, $xxl) {
+      padding: 0 40px;
+    }
+
+    @include between($md, $lg) {
+      padding: 0 30px;
+    }
+    @include between($xxs, $xs) {
+      padding: 0 30px;
+    }
+
+    .texto_e_imagem {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include between($md, $lg) {
+        margin-top: 12vh;
+      }
+
+      @include between($xs, $sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include between($xxs, $xs) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 50vw;
+
+        @include between($md, $lg) {
+          width: 50vw;
+        }
+
+        @include between($xs, $sm) {
+          width: 90vw;
+        }
+
+        @include between($xxs, $xs) {
+          width: 100vw;
+        }
+      }
+
+      .texto {
+        width: 60%;
+        text-align: left;
+
+        @include between($xs, $sm) {
+          width: 100%;
+        }
+        @include between($xxs, $xs) {
+          width: 100%;
+        }
+
+        h1 {
+          color: #a98c58;
+          font-size: 3rem;
+          font-weight: 600;
+          width: 97%;
+          margin-bottom: 40px;
+
+          @include between($xl, $xxl) {
+            font-size: 2rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 1.9rem;
+            width: 100%;
+          }
+
+          @include between($xs, $sm) {
+            text-align: center;
+            font-size: 2.5rem;
+          }
+
+          @include between($xxs, $xs) {
+            text-align: center;
+            font-size: 1.7rem;
+            width: 100%;
+          }
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 40px;
+
+          @include between($xl, $xxl) {
+            font-size: 1.1rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 1rem;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 1.4rem;
+          }
+          @include between($xxs, $xs) {
+            font-size: 1rem;
+          }
+        }
+
+        .icon_e_infos {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0px;
+          margin-bottom: 40px;
+
+          img {
+            width: 1.5vw;
+
+            @include between($xl, $xxl) {
+              width: 1.1vw;
+            }
+
+            @include between($md, $lg) {
+              width: 1.1vw;
+            }
+
+            @include between($xs, $sm) {
+              width: 3vw;
+            }
+            @include between($xxs, $xs) {
+              width: 4vw;
+            }
+          }
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 0px;
+
+          @include between($xl, $xxl) {
+            padding-right: 200px;
+          }
+
+          @include between($md, $lg) {
+            padding-right: 200px;
+          }
+
+          @include between($xxs, $xs) {
+            padding-right: 0px;
+          }
+
+          h3 {
+            font-weight: bold;
+            font-size: 1.4rem;
+
+            @include between($xl, $xxl) {
+              font-size: 1rem;
+              margin-left: 20px;
+            }
+
+            @include between($md, $lg) {
+              font-size: 0.9rem;
+              margin-left: 10px;
+            }
+
+            @include between($xs, $sm) {
+              font-size: 1.2rem;
+              margin-left: 20px;
+            }
+            @include between($xxs, $xs) {
+              font-size: 1rem;
+              margin-left: 20px;
+            }
+          }
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 300;
+
+            @include between($xl, $xxl) {
+              font-size: 1rem;
+              margin-left: 20px;
+            }
+
+            @include between($md, $lg) {
+              font-size: 0.9rem;
+              margin-left: 10px;
+            }
+
+            @include between($xs, $sm) {
+              font-size: 1.2rem;
+              margin-left: 20px;
+            }
+            @include between($xxs, $xs) {
+              font-size: 1rem;
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Areas {
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+  padding: 10vh;
+
+  @include between($md, $lg) {
+    height: auto;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @include between($md, $lg) {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    @include between($xs, $sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & .Img-art {
+      width: 50vw;
+
+      @include between($xl, $xxl) {
+        width: 40vw;
+      }
+
+      @include between($xs, $sm) {
+        width: 70vw;
+      }
+
+      @include between($md, $lg) {
+        width: 40vw;
+      }
+
+      @include between($xxs, $xs) {
+        width: 70vw;
+        margin-top: 240px;
+      }
+    }
+
+    .textoss {
+      .titulo {
+        text-align: center;
+        h1 {
+          color: #f4df8f;
+          font-size: 6rem;
+          font-weight: bold;
+
+          @include between($xl, $xxl) {
+            font-size: 4.5rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 3.8rem;
+            margin-top: 100px;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 3.8rem;
+            margin-top: 100px;
+          }
+
+          @include between($xxs, $xs) {
+            font-size: 4rem;
+            margin-top: 100px;
+          }
+        }
+        h3 {
+          color: #ffffff;
+          font-size: 1.7rem;
+          font-weight: 400;
+          margin-top: 30px;
+
+          @include between($xl, $xxl) {
+            font-size: 1.4rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 1.2rem;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 1.2rem;
+            margin-top: 70px;
+          }
+
+          @include between($xxs, $xs) {
+            font-size: 0.9rem;
+            margin-top: 40px;
+          }
+        }
+      }
+
+      .textos_areas {
+        display: grid;
+        width: 100%;
+      }
+
+      .coluna {
+        display: flex;
+
+        @include between($xxs, $xs) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .area1 {
+        padding: 30px;
+        margin-top: 70px;
+
+        h1 {
+          color: #fff;
+          font-weight: 400;
+          margin-top: 10px;
+          font-size: 1.6rem;
+        }
+
+        li {
+          color: #fff;
+          margin-top: 20px;
+
+          p {
+            font-weight: 300;
+            margin-top: 0px;
+            font-size: 0.9rem;
+
+            @include between($md, $lg) {
+              font-size: 0.6rem;
+            }
+          }
+        }
+
+        img {
+          width: 1.2vw;
+
+          @include between($xs, $sm) {
+            width: 3vw;
+          }
+
+          @include between($xxs, $xs) {
+            width: 6vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Banner-baixo {
+  .banner-img {
+    @include between($xs, $sm) {
+      display: none;
+    }
+
+    @include between($xxs, $xs) {
+      display: none;
+    }
+  }
+}
+
+.Formulario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+
+  @include between($md, $lg) {
+    margin-top: 20vh;
+  }
+
+  @include between($xs, $sm) {
+    margin-top: 0vh;
+  }
+
+  @include between($xxs, $xs) {
+    margin-top: 0vh;
+  }
+
+  .infoss {
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+
+    @include between($xl, $xxl) {
+      padding: 0 40px;
+    }
+
+    @include between($md, $lg) {
+      padding: 40px;
+    }
+
+    @include between($xs, $sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .textos {
+      h1 {
+        color: #a98c58;
+        font-size: 4rem;
+        font-weight: bold;
+
+        @include between($md, $lg) {
+          font-size: 3rem;
+        }
+
+        @include between($xs, $sm) {
+          font-size: 3.5rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 2.2rem;
+        }
+      }
+
+      li {
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        h2 {
+          font-weight: 600;
+
+          @include between($md, $lg) {
+            font-size: 1.2rem;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 1.4rem;
+          }
+
+          @include between($xxs, $xs) {
+            font-size: 1.2rem;
+          }
+        }
+
+        h3 {
+          color: #1f1f1f;
+          font-size: 1.6rem;
+          font-weight: 300;
+          width: 70%;
+
+          @include between($md, $lg) {
+            font-size: 1.2rem;
+            width: 90%;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 1.4rem;
+            width: 100%;
+          }
+
+          @include between($xxs, $xs) {
+            font-size: 1rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

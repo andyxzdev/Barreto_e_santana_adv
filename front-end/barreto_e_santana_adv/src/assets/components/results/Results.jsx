@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./results.css";
+import "./Results.scss";
 
 function Counter({ end, suffix = "", duration = 3000 }) {
   const [count, setCount] = useState(0);
@@ -54,9 +54,7 @@ function Counter({ end, suffix = "", duration = 3000 }) {
 export default function Results() {
   return (
     <section className="results">
-      <h1>
-        Resultados que refletem<br></br>nossa dedicação
-      </h1>
+      <h1>Resultados que refletem nossa dedicação</h1>
 
       <p data-aos-delay="100">Com uma atuação estratégica e personalizada</p>
 

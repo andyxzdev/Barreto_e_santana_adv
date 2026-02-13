@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./App.css";
+import "./App.scss";
 
 import IconPhone from "../../assets/icons/phone.svg";
 import IconMail from "../../assets/icons/mail.svg";
@@ -21,11 +21,11 @@ import BannerBaixo from "../../assets/banners/art3.png";
 import Header from "../../assets/components/header/Header.jsx";
 import "../../assets/components/header/Header.css";
 import Results from "../../assets/components/results/Results.jsx";
-import "../../assets/components/results/Results.css";
+import "../../assets/components/results/Results.scss";
 import FeedbackCarousel from "../../assets/components/carroussel/FeedbackCarousel.jsx";
-import "../../assets/components/carroussel/FeedbackCarousel.css";
+import "../../assets/components/carroussel/FeedbackCarousel.scss";
 import Forms from "../../assets/components/forms/Forms.jsx";
-import "../../assets/components/forms/Forms.css";
+import "../../assets/components/forms/Forms.scss";
 import Footer from "../../assets/components/footer/Footer.jsx";
 import "../../assets/components/footer/Footer.css";
 
@@ -42,11 +42,11 @@ function App() {
   return (
     <>
       <main>
-        <div className="Contatos_topo">
+        <div className="Contatos-topo">
           <div className="infos">
             <div className="contato1">
               <img src={IconPhone} alt="" />
-              <p>(99) 99999-9999</p>
+              <p>(99) 993215864</p>
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
@@ -70,10 +70,9 @@ function App() {
         </section> */}
 
         <section className="Topo">
-          <div className="infos">
+          <div className="infos-topo">
             <h1>
-              Defendendo seus direitos com ética,<br></br>estratégia e
-              compromisso.
+              Defendendo seus direitos com ética, estratégia e compromisso.
             </h1>
             <h3>
               Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
@@ -84,11 +83,9 @@ function App() {
         </section>
 
         <section className="Muito_alem">
-          <div className="infos">
+          <div className="infoss">
             <img src={LogoPequena} alt="" className="Logo_pequena" />
-            <h1>
-              Muito além do Direito.<br></br>Um compromisso com pessoas.
-            </h1>
+            <h1>Muito além do Direito. Um compromisso com pessoas.</h1>
             <h3>
               Nossa atuação é guiada por ética, transparência e
               responsabilidade. Acreditamos em um atendimento próximo,
@@ -169,8 +166,8 @@ function App() {
 
         <section className="Areas">
           <div className="infos">
-            <img src={ImgAreas} alt="" />
-            <div className="textos">
+            <img src={ImgAreas} alt="" className="Img-art" />
+            <div className="textoss">
               <div className="titulo">
                 <h1>Áreas de Atuação</h1>
                 <h3>
@@ -293,7 +290,7 @@ function App() {
 
         <FeedbackCarousel />
 
-        <section className="Banner_baixo">
+        <section className="Banner-baixo">
           <img
             src={BannerBaixo}
             alt=""
@@ -302,12 +299,12 @@ function App() {
               paddingLeft: "120px",
               paddingRight: "120px",
             }}
-            className="banner_baixo"
+            className="banner-img"
           />
         </section>
 
         <section className="Formulario">
-          <div className="infos">
+          <div className="infoss">
             <div className="textos">
               <h1>Como podemos te ajudar?</h1>
               <li>
