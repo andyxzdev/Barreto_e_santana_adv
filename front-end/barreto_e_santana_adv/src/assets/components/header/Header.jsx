@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Header.scss";
 import Logo from "../../logo/Logo2.png";
-
 import { Link } from "react-router-dom";
 
 const Header = ({ customStyle }) => {
@@ -17,11 +16,18 @@ const Header = ({ customStyle }) => {
         <img src={Logo} alt="logoTopo" />
       </div>
 
-      <button className="menu_toggle" onClick={toggleMenu}>
-        ☰
+      <button
+        className={`hamburger${menuOpen ? " open" : ""}`}
+        aria-label="Abrir menu"
+        aria-expanded={menuOpen}
+        onClick={toggleMenu}
+      >
+        <span />
+        <span />
+        <span />
       </button>
 
-      <nav className={`nav ${menuOpen ? "open" : ""}`}>
+      <nav className={menuOpen ? "open" : ""}>
         <ul>
           <li>
             <Link to="/home" onClick={toggleMenu}>
@@ -60,7 +66,10 @@ const Header = ({ customStyle }) => {
           </li>
           <button
             className="ButtonTopo"
-            onClick={() => window.open("https://wa.me/5524993215864", "_blank")}
+            onClick={() => {
+              toggleMenu();
+              window.open("https://wa.me/5524993215864", "_blank");
+            }}
           >
             Contato
           </button>

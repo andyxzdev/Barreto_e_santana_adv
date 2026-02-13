@@ -12,9 +12,9 @@ import ImgDra2 from "../../assets/arts/art2.png";
 import ImgAreas from "../../assets/arts/art_areas_atuacao.png";
 
 import Header from "../../assets/components/header/Header.jsx";
-import "../../assets/components/header/Header.css";
+import "../../assets/components/header/Header.scss";
 import Footer from "../../assets/components/footer/Footer.jsx";
-import "../../assets/components/footer/Footer.css";
+import "../../assets/components/footer/Footer.scss";
 
 function Sobre() {
   useEffect(() => {

@@ -19,7 +19,7 @@ import ImgAreas from "../../assets/arts/art_areas_atuacao.png";
 import BannerBaixo from "../../assets/banners/art3.png";
 
 import Header from "../../assets/components/header/Header.jsx";
-import "../../assets/components/header/Header.css";
+import "../../assets/components/header/Header.scss";
 import Results from "../../assets/components/results/Results.jsx";
 import "../../assets/components/results/Results.scss";
 import FeedbackCarousel from "../../assets/components/carroussel/FeedbackCarousel.jsx";
@@ -27,7 +27,7 @@ import "../../assets/components/carroussel/FeedbackCarousel.scss";
 import Forms from "../../assets/components/forms/Forms.jsx";
 import "../../assets/components/forms/Forms.scss";
 import Footer from "../../assets/components/footer/Footer.jsx";
-import "../../assets/components/footer/Footer.css";
+import "../../assets/components/footer/Footer.scss";
 
 function App() {
   useEffect(() => {

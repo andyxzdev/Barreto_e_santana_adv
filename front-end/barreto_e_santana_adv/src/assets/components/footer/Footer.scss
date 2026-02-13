@@ -1,3 +1,5 @@
+@use "../../../styles/breakpoints" as *;
+
 footer {
   width: 100%;
   background-color: #1f1f1f;
@@ -8,8 +10,23 @@ footer {
     margin: 0 auto;
     padding: 60px;
     display: flex;
-    gap: 120px;
+    gap: 300px;
     align-items: center;
+
+    @include max($sm) {
+      flex-direction: column;
+      gap: 40px;
+      padding: 40px 30px;
+      align-items: flex-start;
+    }
+
+    @include between($xl, $xxl) {
+      gap: 200px;
+    }
+
+    @include between($md, $lg) {
+      gap: 190px;
+    }
 
     h1 {
       font-size: 18px;
@@ -31,13 +48,27 @@ footer {
       gap: 24px;
 
       img {
-        width: 400px;
+        width: 500px;
         height: auto;
+
+        @include max($md) {
+          width: 250px;
+        }
+
+        @include max($sm) {
+          width: 200px;
+        }
+
+        @include between($md, $lg) {
+          width: 270px;
+        }
       }
 
       li {
         display: flex;
-        gap: 16px;
+        gap: 30%;
+        align-items: center;
+        justify-content: center;
 
         ul {
           padding: 0;
@@ -57,11 +88,23 @@ footer {
       flex-direction: column;
       gap: 40px;
 
+      @include max($sm) {
+        gap: 30px;
+      }
+
       .Fale_conosco_footer,
       .Areas_atuacao_footer {
         h1 {
           font-size: 2rem;
           color: #f4df8f;
+
+          @include max($sm) {
+            font-size: 1.5rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 1.3rem;
+          }
         }
         li {
           display: flex;
@@ -75,11 +118,22 @@ footer {
 
             img {
               width: 18px;
+              @include between($md, $lg) {
+                width: 10px;
+              }
             }
 
             p {
               font-size: 14px;
               color: #cfcfcf;
+
+              @include max($sm) {
+                font-size: 13px;
+              }
+
+              @include between($md, $lg) {
+                font-size: 11px;
+              }
             }
           }
         }
@@ -93,6 +147,14 @@ footer {
         h1 {
           font-size: 2rem;
           color: #f4df8f;
+
+          @include max($sm) {
+            font-size: 1.5rem;
+          }
+
+          @include between($md, $lg) {
+            font-size: 1.3rem;
+          }
         }
       }
 
@@ -104,22 +166,42 @@ footer {
 
           img {
             width: 28px;
+
+            @include between($md, $lg) {
+              width: 15px;
+            }
           }
 
           p {
             font-size: 14px;
             color: #cfcfcf;
+
+            @include max($sm) {
+              font-size: 13px;
+            }
+
+            @include between($md, $lg) {
+              font-size: 11px;
+            }
           }
         }
       }
 
       .Links_rapidos_footer {
-        margin-top: 40px;
+        margin-top: 30px;
+
+        @include max($sm) {
+          margin-top: 30px;
+        }
+
         nav {
+          flex-direction: column;
+          align-items: flex-start;
           ul {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            align-items: flex-start;
 
             li {
               a {
@@ -127,6 +209,10 @@ footer {
                 color: #cfcfcf;
                 text-decoration: none;
                 transition: 0.3s;
+
+                @include max($sm) {
+                  font-size: 13px;
+                }
 
                 &:hover {
                   color: #d4af37;
@@ -144,6 +230,14 @@ footer {
     border-top: 1px solid #383838;
     padding: 60px 40px;
 
+    @include max($md) {
+      padding: 40px 30px;
+    }
+
+    @include max($sm) {
+      padding: 30px 20px;
+    }
+
     li {
       width: 100%;
       margin: 0 auto;
@@ -155,43 +249,40 @@ footer {
 
       .direitos_reservados_texto {
         font-size: 1rem;
-
         color: #ffffff;
+
+        @include max($sm) {
+          font-size: 0.9rem;
+        }
+
+        @include between($md, $lg) {
+          font-size: 0.7rem;
+        }
       }
 
       .desenvolvido_andy {
         font-size: 13px;
-
         color: #ffffff;
         margin-top: 20px;
+
+        @include max($sm) {
+          font-size: 12px;
+          margin-top: 15px;
+        }
 
         a {
           color: #d4af37;
           font-size: 15px;
           text-decoration: none;
 
+          @include max($sm) {
+            font-size: 14px;
+          }
+
           &:hover {
             text-decoration: underline;
           }
         }
-      }
-    }
-  }
-}
-
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  footer {
-    .infos_cima {
-      grid-template-columns: 1fr;
-      gap: 50px;
-    }
-
-    .infos_baixo {
-      li {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
       }
     }
   }
