@@ -45,22 +45,22 @@ const Header = ({ customStyle }) => {
             </Link>
           </li>
           <li>
-            <a href="#Resultados" onClick={toggleMenu}>
+            <a href="#resultados" onClick={toggleMenu}>
               Resultados
             </a>
           </li>
           <li>
-            <a href="#Áreas de atuação" onClick={toggleMenu}>
+            <a href="#areas" onClick={toggleMenu}>
               Áreas de atuação
             </a>
           </li>
           <li>
-            <a href="#Feedbacks" onClick={toggleMenu}>
+            <a href="feedbacks" onClick={toggleMenu}>
               Feedbacks
             </a>
           </li>
           <li>
-            <a href="#Como_ajudamos" onClick={toggleMenu}>
+            <a href="#contato" onClick={toggleMenu}>
               Como ajudamos
             </a>
           </li>

@@ -16,7 +16,6 @@ footer {
     @include max($sm) {
       flex-direction: column;
       gap: 40px;
-      padding: 40px 30px;
       align-items: flex-start;
     }
 
@@ -70,6 +69,10 @@ footer {
         align-items: center;
         justify-content: center;
 
+        @include max($sm) {
+          gap: 40px;
+        }
+
         ul {
           padding: 0;
           margin: 0;
@@ -77,6 +80,10 @@ footer {
 
           img {
             width: 22px;
+
+            @include max($sm) {
+              width: 15px;
+            }
           }
         }
       }
@@ -165,7 +172,7 @@ footer {
           gap: 12px;
 
           img {
-            width: 28px;
+            width: 15px;
 
             @include between($md, $lg) {
               width: 15px;
@@ -205,10 +212,12 @@ footer {
 
             li {
               a {
-                font-size: 14px;
+                font-size: 1rem;
                 color: #cfcfcf;
                 text-decoration: none;
                 transition: 0.3s;
+
+                font-family: "Inter", sans-serif;
 
                 @include max($sm) {
                   font-size: 13px;

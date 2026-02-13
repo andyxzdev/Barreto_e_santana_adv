@@ -1,17 +1,18 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 import Logo from "../../logo/Logo1.png";
 
-import IconeDireitoCivil from "../../icons/civil.svg";
+import IconeDireitoCivil from "../../icons/civil2.svg";
 import IconeDireitoTrabalhista from "../../icons/business.svg";
-import IconeDireitoFamilia from "../../icons/business.svg";
-import IconeDireitoPrevidenciario from "../../icons/shield.svg";
-import IconeDireitoConsumidor from "../../icons/cart.svg";
-import IconeDireitoBancario from "../../icons/cash.svg";
+import IconeDireitoFamilia from "../../icons/family2.svg";
+import IconeDireitoPrevidenciario from "../../icons/shield2.svg";
+import IconeDireitoConsumidor from "../../icons/cart2.svg";
+import IconeDireitoBancario from "../../icons/cash2.svg";
 import IconeLocalization from "../../icons/localization.svg";
-import IconePhone from "../../icons/phone.svg";
-import IconeEmail from "../../icons/mail.svg";
+import IconePhone from "../../icons/phone2.svg";
+import IconeEmail from "../../icons/mail2.svg";
 
 import IconeInsta from "../../icons/insta.svg";
 import IconeLinkedin from "../../icons/linkedin.svg";
@@ -95,25 +96,25 @@ const Footer = ({ customStyle }) => {
               <h1>Links Rápidos</h1>
               <ul>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#topo">Início</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#valores">Valores</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#topo">Sobre nós</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#resultados">Resultados</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#areas">Áreas de atuação</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#Feedbacks">Feedbacks</a>
                 </li>
                 <li>
-                  <a href="">lorem</a>
+                  <a href="#contato">Como ajudamos</a>
                 </li>
               </ul>
             </nav>

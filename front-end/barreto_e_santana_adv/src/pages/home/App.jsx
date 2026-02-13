@@ -6,6 +6,10 @@ import "./App.scss";
 import IconPhone from "../../assets/icons/phone.svg";
 import IconMail from "../../assets/icons/mail.svg";
 import IconeDirCivil from "../../assets/icons/civil.svg";
+import IconeFamily from "../../assets/icons/family.svg";
+import IconeShield from "../../assets/icons/shield.svg";
+import IconeCart from "../../assets/icons/cart.svg";
+import IconeCash from "../../assets/icons/cash.svg";
 import LogoPequena from "../../assets/icons/logo.png";
 import IconWorld from "../../assets/icons/world.svg";
 import IconBusiness2 from "../../assets/icons/business2.svg";
@@ -55,22 +59,8 @@ function App() {
           </div>
         </div>
         <Header />
-        {/* <section className="Hero">
-          <div className="infos">
-            <h1>
-              Defendendo seus direitos com ética,<br></br>estratégia e
-              compromisso.
-            </h1>
-            <h3>
-              Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
-              soluções jurídicas claras, humanas e eficazes para cada cliente.
-            </h3>
-            <button className="Button_hero">Conheça a Barreto & Santana</button>
-          </div>
-        </section> */}
-
         <section className="Topo">
-          <div className="infos-topo">
+          <div className="infos-topo" id="topo">
             <h1>
               Defendendo seus direitos com ética, estratégia e compromisso.
             </h1>
@@ -78,11 +68,11 @@ function App() {
               Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
               soluções jurídicas claras, humanas e eficazes para cada cliente.
             </h3>
-            <button className="Button_hero">Conheça a Barreto & Santana</button>
+            <button className="Button_hero">Fale conosco</button>
           </div>
         </section>
 
-        <section className="Muito_alem">
+        <section className="Muito_alem" id="valores">
           <div className="infoss">
             <img src={LogoPequena} alt="" className="Logo_pequena" />
             <h1>Muito além do Direito. Um compromisso com pessoas.</h1>
@@ -96,7 +86,7 @@ function App() {
           </div>
         </section>
 
-        <section className="Atendimento">
+        <section className="Atendimento" id="atendimento">
           <div className="Titulo">
             <h1>
               Atendimento em Belo Horizonte<br></br>e em todo o Brasil
@@ -162,9 +152,9 @@ function App() {
           </div>
         </section>
 
-        <Results />
+        <Results id="resultados" />
 
-        <section className="Areas">
+        <section className="Areas" id="areas">
           <div className="infos">
             <img src={ImgAreas} alt="" className="Img-art" />
             <div className="textoss">
@@ -196,89 +186,88 @@ function App() {
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <img src={IconeFamily} alt="" />
+                    <h1>Direito de Família</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
+                        Cuida das relações familiares, como divórcio, pensão
+                        alimentícia, guarda de filhos e inventários.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Tem como objetivo proteger vínculos, direitos e
+                        interesses das partes envolvidas, com sensibilidade e
+                        responsabilidade.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <img src={IconBusiness2} alt="" />
+                    <h1>Direito Trabalhista</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
+                        Defende os direitos de empregados e empregadores nas
+                        relações de trabalho.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Tem como objetivo resolver questões como verbas
+                        rescisórias, horas extras, assédio e acordos
+                        trabalhistas.
                       </p>
                     </li>
                   </div>
                 </div>
                 <div className="coluna">
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <img src={IconeShield} alt="" />
+                    <h1>Direito Previdenciário</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
+                        Atua na garantia de benefícios do INSS, como
+                        aposentadorias, pensões e auxílios.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
-                      </p>
-                    </li>
-                  </div>
-                  <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
-                    <li>
-                      <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Tem como objetivo assegurar proteção e estabilidade
+                        financeira em momentos importantes da vida.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <img src={IconeCart} alt="" />
+                    <h1>Direito do Consumidor</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
+                        Protege o consumidor em relações de compra e prestação
+                        de serviços.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Tem como objetivo resolver problemas como cobranças
+                        indevidas, produtos com defeito e falhas na prestação de
+                        serviços.
+                      </p>
+                    </li>
+                  </div>
+                  <div className="area1">
+                    <img src={IconeCash} alt="" />
+                    <h1>Direito Bancário</h1>
+                    <li>
+                      <p>
+                        Atua na defesa dos direitos do consumidor e de empresas
+                        em relações com instituições financeiras.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Tem como objetivo resolver questões como juros abusivos,
+                        renegociação de dívidas, contratos bancários e cobranças
+                        indevidas.
                       </p>
                     </li>
                   </div>
@@ -288,7 +277,7 @@ function App() {
           </div>
         </section>
 
-        <FeedbackCarousel />
+        <FeedbackCarousel id="feedbacks" />
 
         <section className="Banner-baixo">
           <img
@@ -303,7 +292,7 @@ function App() {
           />
         </section>
 
-        <section className="Formulario">
+        <section className="Formulario" id="contato">
           <div className="infoss">
             <div className="textos">
               <h1>Como podemos te ajudar?</h1>

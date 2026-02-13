@@ -1,0 +1,648 @@
+@use "../../styles/breakpoints" as *;
+
+.Contatos-topo {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  background-color: #1f1f1f;
+
+  @include between($xxs, $xs) {
+    height: 12vh;
+  }
+
+  & .infos {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+
+    @include between($xl, $xxl) {
+      gap: 30px;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 25px 70px;
+      text-align: center;
+    }
+
+    & .contato1 {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+
+      @include between($xxs, $xs) {
+        margin-left: 0px;
+      }
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    & .contato2 {
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1.2rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.Topo-sobre {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../assets/banners/Banner-topo-sobre.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @include between($md, $lg) {
+    height: 85vh;
+  }
+
+  @include between($xs, $sm) {
+    background-image: url("../../assets/banners/Banner-topo-sobre2.jpg");
+
+    height: 80vh;
+  }
+
+  @include between($xxs, $xs) {
+    background-image: url("../../assets/banners/Banner-topo-sobre2.jpg");
+
+    height: 80vh;
+  }
+
+  & .infos-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 66%;
+    gap: 40px;
+    padding: 15vh 120px 0;
+
+    @include between($md, $lg) {
+      margin-top: -10px;
+      margin-left: 0px;
+      padding: 10vh 100px 0;
+    }
+
+    @include between($xs, $sm) {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+
+    @include between($xxs, $xs) {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+
+    @include between($xl, $xxl) {
+      padding: 10vh 120px 0;
+      margin-left: 10px;
+    }
+
+    & h1 {
+      color: #f4df8f;
+      font-weight: 400;
+      font-size: 4rem;
+
+      @include between($xl, $xxl) {
+        font-size: 3rem;
+      }
+
+      @include between($md, $lg) {
+        font-size: 2.5rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 2.3rem;
+        margin-top: 33vh;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 2rem;
+        margin-top: 30vh;
+      }
+    }
+
+    & h3 {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 400;
+      width: 70%;
+
+      @include between($md, $lg) {
+        font-size: 1rem;
+      }
+
+      @include between($xs, $sm) {
+        font-size: 0.8rem;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 0.8rem;
+        width: 90%;
+      }
+    }
+
+    & .Button_hero {
+      width: 21vw;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background-color: #f4df8f;
+      color: #1f1f1f;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: 0.5s;
+
+      @include between($md, $lg) {
+        width: 20vw;
+        height: 30px;
+        font-size: 1rem;
+      }
+
+      @include between($xs, $sm) {
+        width: 50vw;
+        height: 35px;
+      }
+
+      @include between($xxs, $xs) {
+        width: 70vw;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+
+    & .Button_hero:hover {
+      border: solid 2px #f4df8f;
+      border-radius: 0px;
+      background-color: transparent;
+      color: #f4df8f;
+    }
+  }
+}
+
+.Sobre {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  margin-top: 20vh;
+
+  @include between($xs, $sm) {
+    margin-top: 10vh;
+  }
+
+  .Titulo {
+    font-size: 2.3rem;
+    color: #a98c58;
+    h1 {
+      font-weight: bold;
+
+      @include between($xs, $sm) {
+        font-size: 3.5rem;
+      }
+
+      @include between($xxs, $xs) {
+        font-size: 2.7rem;
+      }
+    }
+  }
+
+  .infos {
+    margin-top: 10vh;
+
+    @include between($xs, $sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .adv1,
+    .adv2 {
+      padding: 0 80px;
+
+      .Img_dra1,
+      .Img_dra2 {
+        width: 35vw;
+
+        @include between($xs, $sm) {
+          width: 75vw;
+        }
+
+        @include between($xxs, $xs) {
+          width: 70vw;
+        }
+      }
+
+      h1 {
+        font-size: 2.7rem;
+        color: #a98c58;
+        font-weight: bold;
+
+        @include between($xxs, $xs) {
+          font-size: 2rem;
+        }
+      }
+
+      li {
+        margin: 40px 0;
+
+        h3 {
+          font-size: 1.3rem;
+          font-weight: 300;
+
+          @include between($xxs, $xs) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .adv1 {
+      text-align: left;
+    }
+    .adv2 {
+      text-align: right;
+    }
+  }
+}
+
+.Areas {
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+  padding: 10vh;
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @include between($md, $lg) {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      gap: 30px;
+    }
+
+    @include between($xs, $sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 50vw;
+
+      @include between($xl, $xxl) {
+        width: 35vw;
+      }
+
+      @include between($xs, $sm) {
+        width: 70vw;
+      }
+
+      @include between($md, $lg) {
+        width: 30vw;
+      }
+
+      @include between($xxs, $xs) {
+        width: 70vw;
+        margin-top: 0px;
+      }
+    }
+
+    .textos {
+      .titulo {
+        text-align: center;
+
+        @include between($xs, $sm) {
+          padding: 0 0px;
+        }
+        h1 {
+          color: #f4df8f;
+          font-size: 5rem;
+          font-weight: bold;
+
+          @include between($xl, $xxl) {
+            font-size: 3rem;
+            width: 80%;
+          }
+
+          @include between($md, $lg) {
+            font-size: 2.2rem;
+            width: 100%;
+          }
+
+          @include between($xs, $sm) {
+            font-size: 3rem;
+            margin-top: 100px;
+          }
+
+          @include between($xxs, $xs) {
+            font-size: 2.5rem;
+            margin-top: 100px;
+          }
+        }
+      }
+
+      .textos_areas {
+        display: grid;
+
+        .coluna {
+          display: flex;
+          gap: 20px;
+
+          @include between($xl, $xxl) {
+            width: 80%;
+          }
+
+          @include between($xs, $sm) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          @include between($xxs, $xs) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        .area1 {
+          padding: 0 30px;
+          margin-top: 70px;
+          background-color: #2b2b2b;
+          border-radius: 30px;
+          height: 300px;
+          width: 350px;
+
+          @include between($md, $lg) {
+            height: 180px;
+            width: 200px;
+          }
+
+          @include between($xxs, $xs) {
+            height: 260px;
+            width: 300px;
+          }
+
+          .motivo-numero {
+            color: #f4df8f;
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 6rem;
+
+            @include between($md, $lg) {
+              font-size: 3rem;
+            }
+
+            @include between($xxs, $xs) {
+              font-size: 4rem;
+            }
+          }
+
+          h1 {
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 1.4rem;
+            margin-top: 10px;
+
+            @include between($md, $lg) {
+              font-size: 0.9rem;
+            }
+          }
+
+          li {
+            color: #fff;
+            margin-top: 20px;
+
+            p {
+              font-weight: 300;
+              margin-top: 0px;
+              @include between($md, $lg) {
+                font-size: 0.5rem;
+              }
+            }
+          }
+
+          img {
+            width: 1.2vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Como-trabalhamos {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include between($md, $lg) {
+    height: 120vh;
+  }
+
+  @include between($xs, $sm) {
+    height: 190vh;
+  }
+
+  @include between($xxs, $xs) {
+    height: 210vh;
+  }
+
+  .infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+
+    h1 {
+      color: #a98c58;
+      font-size: 4rem;
+
+      @include between($md, $lg) {
+        font-size: 3rem;
+      }
+    }
+
+    .quadrados-espaco {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 80px;
+      padding: 0 100px;
+      gap: 70px;
+
+      @include between($md, $lg) {
+        gap: 40px;
+      }
+
+      @include between($xs, $sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @include between($xxs, $xs) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .quadrado {
+        background-color: #1f1f1f;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 20vw;
+        border-radius: 30px;
+        gap: 30px;
+        padding: 0 20px;
+
+        @include between($md, $lg) {
+          height: 40vh;
+        }
+
+        @include between($xs, $sm) {
+          height: 30vh;
+          width: 60vw;
+        }
+
+        @include between($xxs, $xs) {
+          height: 30vh;
+          width: 80vw;
+        }
+
+        img {
+          width: 60px;
+
+          @include between($md, $lg) {
+            width: 40px;
+          }
+
+          @include between($xxs, $xs) {
+            width: 40px;
+          }
+        }
+
+        h3 {
+          font-size: 1.7rem;
+          color: #ffffff;
+          font-family: "Cormorant Garamond", serif;
+          @include between($md, $lg) {
+            font-size: 1.2rem;
+          }
+        }
+
+        p {
+          color: #ffffff;
+          font-weight: 300;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    & .botao-contato {
+      width: 17vw;
+      height: 40px;
+      border: none;
+      border-radius: 30px;
+      background-color: #f4df8f;
+      color: #1f1f1f;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-top: 5vh;
+
+      @include between($md, $lg) {
+        margin-top: 15vh;
+      }
+
+      @include between($xs, $sm) {
+        width: 50vw;
+        height: 35px;
+      }
+
+      @include between($xxs, $xs) {
+        width: 70vw;
+        height: 35px;
+        font-size: 1rem;
+      }
+    }
+
+    & .botao-contato:hover {
+      border: solid 2px #1f1f1f;
+      border-radius: 0px;
+      background-color: transparent;
+      color: #1f1f1f;
+    }
+  }
+}

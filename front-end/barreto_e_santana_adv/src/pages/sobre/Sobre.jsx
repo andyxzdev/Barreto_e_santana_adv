@@ -1,15 +1,18 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Sobre.css";
+import "./Sobre.scss";
 
+import IconSearch from "../../assets/icons/search.svg";
+import IconPapper from "../../assets/icons/papper.svg";
+import IconDirCivil from "../../assets/icons/civil.svg";
+import IconHands from "../../assets/icons/hands.svg";
 import IconPhone from "../../assets/icons/phone.svg";
 import IconMail from "../../assets/icons/mail.svg";
-import IconeDirCivil from "../../assets/icons/civil.svg";
 
 import ImgDra1 from "../../assets/arts/art1.png";
 import ImgDra2 from "../../assets/arts/art2.png";
-import ImgAreas from "../../assets/arts/art_areas_atuacao.png";
+import ImgMotivos from "../../assets/arts/art_motivos.png";
 
 import Header from "../../assets/components/header/Header.jsx";
 import "../../assets/components/header/Header.scss";
@@ -29,7 +32,7 @@ function Sobre() {
   return (
     <>
       <main>
-        <div className="Contatos_topo">
+        <div className="Contatos-topo">
           <div className="infos">
             <div className="contato1">
               <img src={IconPhone} alt="" />
@@ -42,16 +45,19 @@ function Sobre() {
           </div>
         </div>
         <Header />
-        <section className="Hero">
-          <div className="infos">
-            <h1>
-              Defendendo seus direitos com ética, estratégia e compromisso.
-            </h1>
+        <section className="Topo-sobre">
+          <div className="infos-topo">
+            <h1>Excelência e Estratégia em Direito do Trabalho</h1>
             <h3>
-              Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
-              soluções jurídicas claras, humanas e eficazes para cada cliente.
+              Defesa técnica, atendimento personalizado e atuação estratégica
+              para proteger seus direitos com segurança e responsabilidade.
             </h3>
-            <button className="Button_hero">Conheça a Barreto & Santana</button>
+            <h3>
+              Com sede em Belo Horizonte e atendimento em todo o Brasil, atuamos
+              com compromisso, ética e profundidade jurídica para transformar
+              desafios trabalhistas em soluções eficazes.
+            </h3>
+            <button className="Button_hero">Agendar Atendimento</button>
           </div>
         </section>
 
@@ -106,125 +112,122 @@ function Sobre() {
 
         <section className="Areas">
           <div className="infos">
-            <img src={ImgAreas} alt="" />
+            <img src={ImgMotivos} alt="" />
             <div className="textos">
               <div className="titulo">
-                <h1>Áreas de Atuação</h1>
-                <h3>
-                  Atuamos de forma estratégica nas principais áreas do Direito,
-                  <br></br>sempre com foco em soluções claras e eficientes.
-                </h3>
+                <h1>
+                  6 motivos do porque escolher a Barreto & Santana Advogados
+                </h1>
               </div>
 
               <div className="textos_areas">
                 <div className="coluna">
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">1</h1>
+                    <h1>Experiência Comprovada</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Atuação sólida em demandas trabalhistas, com histórico
+                        consistente de resultados.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">2</h1>
+                    <h1>Atendimento Personalizado</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Cada caso é tratado de forma individualizada, com
+                        estratégia específica para cada cliente.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">3</h1>
+                    <h1>Comprometimento com a Ética</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
+                        Transparência, responsabilidade e respeito em todas as
+                        etapas do atendimento.
                       </p>
                     </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
-                      </p>
-                    </li>
+                    <li></li>
                   </div>
                 </div>
                 <div className="coluna">
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">4</h1>
+                    <h1>Estratégia Jurídica Inteligente</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Análise técnica detalhada para maximizar suas chances de
+                        êxito.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">5</h1>
+                    <h1>Comunicação Clara e Direta</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Você entende exatamente o que está acontecendo no seu
+                        processo.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <h1 className="motivo-numero">6</h1>
+                    <h1>Atuação Nacional</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Atendimento presencial em Belo Horizonte e online em
+                        todo o Brasil.
                       </p>
                     </li>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="Como-trabalhamos">
+          <div className="infos">
+            <h1>Como trabalhamos</h1>
+            <div className="quadrados-espaco">
+              <div className="quadrado">
+                <img src={IconSearch} alt="" />
+                <h3>Análise detalhada do caso</h3>
+                <p>
+                  Estudo técnico da documentação e identificação das melhores
+                  estratégias jurídicas.
+                </p>
+              </div>
+              <div className="quadrado">
+                <img src={IconPapper} alt="" />
+                <h3>Planejamento estratégico</h3>
+                <p>Definição de abordagem personalizada para cada situação.</p>
+              </div>
+              <div className="quadrado">
+                <img src={IconDirCivil} alt="" />
+                <h3>Defesa técnica consistente</h3>
+                <p>Atuação firme, fundamentada e focada em resultados.</p>
+              </div>
+              <div className="quadrado">
+                <img src={IconHands} alt="" />
+                <h3>Acompanhamento contínuo</h3>
+                <p>Suporte durante todo o andamento processual.</p>
+              </div>
+            </div>
+            <button
+              className="botao-contato"
+              onClick={() => {
+                toggleMenu();
+                window.open("https://wa.me/5524993215864", "_blank");
+              }}
+            >
+              Agendar Atendimento
+            </button>
           </div>
         </section>
         <Footer />
