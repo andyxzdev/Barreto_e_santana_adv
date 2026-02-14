@@ -42,11 +42,15 @@
         @include between($xxs, $xs) {
           width: 4vw;
         }
+
+        @include between($xs, $sm) {
+          width: 2vw;
+        }
       }
 
       & p {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #fff;
         margin-left: 10px;
 
@@ -70,11 +74,14 @@
         @include between($xxs, $xs) {
           width: 4vw;
         }
+        @include between($xs, $sm) {
+          width: 2vw;
+        }
       }
 
       & p {
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #fff;
         margin-left: 10px;
 
@@ -260,16 +267,20 @@
 
   .infos {
     margin-top: 10vh;
+    margin-bottom: 10vh;
 
-    @include between($xs, $sm) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
     .adv1,
     .adv2 {
       padding: 0 80px;
+      display: flex;
+      align-items: center;
+
+      @include max($sm) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .Img_dra1,
       .Img_dra2 {
@@ -535,6 +546,7 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 80px;
+      margin-bottom: 80px;
       padding: 0 100px;
       gap: 70px;
 
@@ -610,39 +622,39 @@
       }
     }
 
-    & .botao-contato {
-      width: 17vw;
-      height: 40px;
-      border: none;
-      border-radius: 30px;
-      background-color: #f4df8f;
-      color: #1f1f1f;
-      font-size: 1.4rem;
-      cursor: pointer;
-      transition: 0.5s;
-      margin-top: 5vh;
+    // & .botao-contato {
+    //   width: 17vw;
+    //   height: 40px;
+    //   border: none;
+    //   border-radius: 30px;
+    //   background-color: #f4df8f;
+    //   color: #1f1f1f;
+    //   font-size: 1.4rem;
+    //   cursor: pointer;
+    //   transition: 0.5s;
+    //   margin-top: 5vh;
 
-      @include between($md, $lg) {
-        margin-top: 15vh;
-      }
+    //   @include between($md, $lg) {
+    //     margin-top: 15vh;
+    //   }
 
-      @include between($xs, $sm) {
-        width: 50vw;
-        height: 35px;
-      }
+    //   @include between($xs, $sm) {
+    //     width: 50vw;
+    //     height: 35px;
+    //   }
 
-      @include between($xxs, $xs) {
-        width: 70vw;
-        height: 35px;
-        font-size: 1rem;
-      }
-    }
+    //   @include between($xxs, $xs) {
+    //     width: 70vw;
+    //     height: 35px;
+    //     font-size: 1rem;
+    //   }
+    // }
 
-    & .botao-contato:hover {
-      border: solid 2px #1f1f1f;
-      border-radius: 0px;
-      background-color: transparent;
-      color: #1f1f1f;
-    }
+    // & .botao-contato:hover {
+    //   border: solid 2px #1f1f1f;
+    //   border-radius: 0px;
+    //   background-color: transparent;
+    //   color: #1f1f1f;
+    // }
   }
 }

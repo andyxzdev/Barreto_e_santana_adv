@@ -32,11 +32,13 @@ import Forms from "../../assets/components/forms/Forms.jsx";
 import "../../assets/components/forms/Forms.scss";
 import Footer from "../../assets/components/footer/Footer.jsx";
 import "../../assets/components/footer/Footer.scss";
+import ButtonContact from "../../assets/components/button/ButtonContact.jsx";
+import "../../assets/components/button/ButtonContact.scss";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       once: true,
       offset: 120,
       easing: "ease-in-cubic",
@@ -50,7 +52,7 @@ function App() {
           <div className="infos">
             <div className="contato1">
               <img src={IconPhone} alt="" />
-              <p>(99) 993215864</p>
+              <p>(31) 72057190</p>
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
@@ -68,26 +70,43 @@ function App() {
               Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
               soluções jurídicas claras, humanas e eficazes para cada cliente.
             </h3>
-            <button className="Button_hero">Fale conosco</button>
+            {/* <button
+              className="Button_hero"
+              onClick={() => {
+                toggleMenu();
+                window.open("https://wa.me/553172057198", "_blank");
+              }}
+            >
+              Fale conosco
+            </button> */}
+
+            <ButtonContact Text="Fale conosco" />
           </div>
         </section>
 
         <section className="Muito_alem" id="valores">
           <div className="infoss">
-            <img src={LogoPequena} alt="" className="Logo_pequena" />
-            <h1>Muito além do Direito. Um compromisso com pessoas.</h1>
-            <h3>
+            <img
+              src={LogoPequena}
+              alt=""
+              className="Logo_pequena"
+              data-aos="fade-up"
+            />
+            <h1 data-aos="fade-down">
+              Muito além do Direito. Um compromisso com pessoas.
+            </h1>
+            <h3 data-aos="fade-up">
               Nossa atuação é guiada por ética, transparência e
               responsabilidade. Acreditamos em um atendimento próximo,
               estratégico e personalizado, onde cada caso é tratado com atenção
               real e respeito à história de cada cliente.
             </h3>
-            <img src={Arrow} alt="" className="Arrow" />
+            <img src={Arrow} alt="" className="Arrow" data-aos="fade-up" />
           </div>
         </section>
 
         <section className="Atendimento" id="atendimento">
-          <div className="Titulo">
+          <div className="Titulo" data-aos="fade-up">
             <h1>
               Atendimento em Belo Horizonte<br></br>e em todo o Brasil
             </h1>
@@ -95,7 +114,7 @@ function App() {
 
           <div className="infos">
             <div className="texto_e_imagem">
-              <div className="texto">
+              <div className="texto" data-aos="fade-right">
                 <h1>
                   Atendimento Jurídico Especializado em Belo Horizonte e em Todo
                   o Brasil
@@ -147,18 +166,24 @@ function App() {
                   </li>
                 </div>
               </div>
-              <img src={ImgAtendimento} alt="" className="Img_dra1" />
+              <img
+                src={ImgAtendimento}
+                alt=""
+                className="Img_dra1"
+                data-aos="fade-left"
+              />
             </div>
           </div>
         </section>
+        <section id="resultados">
+          <Results />
+        </section>
 
-        <Results id="resultados" />
-
-        <section className="Areas" id="areas">
+        <section className="Areass" id="areas">
           <div className="infos">
             <img src={ImgAreas} alt="" className="Img-art" />
             <div className="textoss">
-              <div className="titulo">
+              <div className="titulo" data-aos="fade-up">
                 <h1>Áreas de Atuação</h1>
                 <h3>
                   Atuamos de forma estratégica nas principais áreas do Direito,
@@ -166,8 +191,8 @@ function App() {
                 </h3>
               </div>
 
-              <div className="textos_areas">
-                <div className="coluna">
+              <div className="textos-areas">
+                <div className="coluna" data-aos="fade-left">
                   <div className="area1">
                     <img src={IconeDirCivil} alt="" />
                     <h1>Direito Civil</h1>
@@ -220,7 +245,7 @@ function App() {
                     </li>
                   </div>
                 </div>
-                <div className="coluna">
+                <div className="coluna" data-aos="fade-right">
                   <div className="area1">
                     <img src={IconeShield} alt="" />
                     <h1>Direito Previdenciário</h1>
@@ -277,7 +302,9 @@ function App() {
           </div>
         </section>
 
-        <FeedbackCarousel id="feedbacks" />
+        <section id="feedbacks">
+          <FeedbackCarousel />
+        </section>
 
         <section className="Banner-baixo">
           <img
@@ -295,20 +322,20 @@ function App() {
         <section className="Formulario" id="contato">
           <div className="infoss">
             <div className="textos">
-              <h1>Como podemos te ajudar?</h1>
-              <li>
+              <h1 data-aos="fade-left">Como podemos te ajudar?</h1>
+              <li data-aos="fade-right">
                 <h2 className="">
                   Estamos prontas para te orientar e defender seus direitos.
                 </h2>
               </li>
-              <li>
+              <li data-aos="fade-up">
                 <h3>
                   Cada caso é único. Por isso, oferecemos um atendimento
                   próximo, personalizado e focado na melhor estratégia jurídica
                   para você.
                 </h3>
               </li>
-              <li>
+              <li data-aos="fade-down">
                 <h3>
                   Preencha o formulário ao lado e nossa equipe entrará em
                   contato o mais breve possível.

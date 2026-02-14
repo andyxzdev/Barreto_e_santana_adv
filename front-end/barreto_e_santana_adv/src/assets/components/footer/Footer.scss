@@ -78,10 +78,21 @@ footer {
           margin: 0;
           cursor: pointer;
 
+          .icon-face {
+            width: 15px;
+
+            @include between($md, $lg) {
+              width: 11px;
+            }
+          }
+
           img {
             width: 22px;
 
             @include max($sm) {
+              width: 15px;
+            }
+            @include between($md, $lg) {
               width: 15px;
             }
           }
@@ -97,6 +108,10 @@ footer {
 
       @include max($sm) {
         gap: 30px;
+      }
+
+      @include between($md, $lg) {
+        padding-left: 25px;
       }
 
       .Fale_conosco_footer,
@@ -149,6 +164,9 @@ footer {
 
     /* COLUNA DIREITA */
     .Coluna_dir {
+      @include between($md, $lg) {
+        padding-left: 25px;
+      }
       .Localizacao_footer,
       .Links_rapidos_footer {
         h1 {
@@ -175,7 +193,7 @@ footer {
             width: 15px;
 
             @include between($md, $lg) {
-              width: 15px;
+              width: 10px;
             }
           }
 
@@ -201,6 +219,10 @@ footer {
           margin-top: 30px;
         }
 
+        @include between($md, $lg) {
+          margin-top: 30px;
+        }
+
         nav {
           flex-direction: column;
           align-items: flex-start;
@@ -221,6 +243,10 @@ footer {
 
                 @include max($sm) {
                   font-size: 13px;
+                }
+
+                @include between($md, $lg) {
+                  font-size: 10px;
                 }
 
                 &:hover {
@@ -279,6 +305,10 @@ footer {
           margin-top: 15px;
         }
 
+        @include between($md, $lg) {
+          font-size: 10px;
+        }
+
         a {
           color: #d4af37;
           font-size: 15px;
@@ -286,6 +316,10 @@ footer {
 
           @include max($sm) {
             font-size: 14px;
+          }
+
+          @include between($md, $lg) {
+            font-size: 12px;
           }
 
           &:hover {

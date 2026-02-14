@@ -234,7 +234,7 @@
   .infoss {
     background-color: #1f1f1f;
     width: 60%;
-    height: 50vh;
+    height: 54vh;
     border-radius: 40px;
     padding: 30px;
     margin-top: 13vh;
@@ -599,14 +599,17 @@
   }
 }
 
-.Areas {
+.Areass {
   width: 100%;
   height: auto;
   background-color: #1f1f1f;
-  padding: 10vh;
+  padding: 5vh;
 
   @include between($md, $lg) {
     height: auto;
+  }
+  @include between($xl, $xxl) {
+    padding: 2vh;
   }
 
   .infos {
@@ -646,7 +649,7 @@
       }
 
       @include between($md, $lg) {
-        width: 40vw;
+        width: 36vw;
       }
 
       @include between($xxs, $xs) {
@@ -708,14 +711,17 @@
         }
       }
 
-      .textos_areas {
+      .textos-areas {
         display: grid;
         width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
       }
 
       .coluna {
         display: flex;
-
+        padding-left: 20px;
         @include between($xxs, $xs) {
           display: flex;
           flex-direction: column;
@@ -725,12 +731,24 @@
       .area1 {
         padding: 30px;
         margin-top: 70px;
+        width: 350px;
+
+        @include between($xl, $xxl) {
+          width: 280px;
+        }
+        @include between($md, $lg) {
+          width: 220px;
+        }
 
         h1 {
           color: #fff;
           font-weight: 400;
           margin-top: 10px;
           font-size: 1.6rem;
+
+          @include between($md, $lg) {
+            font-size: 1.3rem;
+          }
         }
 
         li {

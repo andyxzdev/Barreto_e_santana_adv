@@ -25,14 +25,14 @@ const Footer = ({ customStyle }) => {
         <div className="Coluna_esq">
           <img src={Logo} alt="Logo Barreto & Santana" />
           <li>
-            <ul>
+            <ul href="https://www.instagram.com/andyxdev_/">
               <img src={IconeInsta} alt="Instagram" />
             </ul>
             <ul>
               <img src={IconeLinkedin} alt="LinkedIn" />
             </ul>
             <ul>
-              <img src={IconeFacebook} alt="Facebook" />
+              <img src={IconeFacebook} alt="Facebook" className="icon-face" />
             </ul>
           </li>
         </div>
@@ -42,7 +42,7 @@ const Footer = ({ customStyle }) => {
             <li>
               <ul>
                 <img src={IconePhone} alt="Telefone" />
-                <p>(11) 9999-9999</p>
+                <p>(31) 72057190</p>
               </ul>
               <ul>
                 <img src={IconeEmail} alt="Email" />

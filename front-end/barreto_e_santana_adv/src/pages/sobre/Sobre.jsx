@@ -18,6 +18,8 @@ import Header from "../../assets/components/header/Header.jsx";
 import "../../assets/components/header/Header.scss";
 import Footer from "../../assets/components/footer/Footer.jsx";
 import "../../assets/components/footer/Footer.scss";
+import ButtonContact from "../../assets/components/button/ButtonContact.jsx";
+import "../../assets/components/button/ButtonContact.scss";
 
 function Sobre() {
   useEffect(() => {
@@ -36,7 +38,9 @@ function Sobre() {
           <div className="infos">
             <div className="contato1">
               <img src={IconPhone} alt="" />
-              <p>(99) 99999-9999</p>
+              <p>
+                <p>(31) 72057190</p>
+              </p>
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
@@ -57,7 +61,7 @@ function Sobre() {
               com compromisso, ética e profundidade jurídica para transformar
               desafios trabalhistas em soluções eficazes.
             </h3>
-            <button className="Button_hero">Agendar Atendimento</button>
+            <ButtonContact Text="Agendar atendimento" />
           </div>
         </section>
 
@@ -219,15 +223,7 @@ function Sobre() {
                 <p>Suporte durante todo o andamento processual.</p>
               </div>
             </div>
-            <button
-              className="botao-contato"
-              onClick={() => {
-                toggleMenu();
-                window.open("https://wa.me/5524993215864", "_blank");
-              }}
-            >
-              Agendar Atendimento
-            </button>
+            <ButtonContact Text="Agendar atendimento" />
           </div>
         </section>
         <Footer />

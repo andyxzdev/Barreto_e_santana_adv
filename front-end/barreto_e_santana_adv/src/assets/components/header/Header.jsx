@@ -55,7 +55,7 @@ const Header = ({ customStyle }) => {
             </a>
           </li>
           <li>
-            <a href="feedbacks" onClick={toggleMenu}>
+            <a href="#feedbacks" onClick={toggleMenu}>
               Feedbacks
             </a>
           </li>
@@ -68,7 +68,7 @@ const Header = ({ customStyle }) => {
             className="ButtonTopo"
             onClick={() => {
               toggleMenu();
-              window.open("https://wa.me/5524993215864", "_blank");
+              window.open("https://wa.me/553172057198", "_blank");
             }}
           >
             Contato
