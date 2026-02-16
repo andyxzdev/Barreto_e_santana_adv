@@ -344,6 +344,7 @@
       margin-top: 100px;
       margin-bottom: 100px;
       gap: 30px;
+      padding: 0vh;
     }
 
     @include between($xs, $sm) {
@@ -382,6 +383,7 @@
     }
 
     .textos {
+      padding: 0;
       .titulo {
         text-align: center;
 
@@ -422,6 +424,10 @@
           display: flex;
           gap: 20px;
 
+          @include between($md, $lg) {
+            width: 100%;
+            padding: 0 80px;
+          }
           @include between($xl, $xxl) {
             width: 80%;
           }
@@ -448,7 +454,7 @@
           width: 350px;
 
           @include between($md, $lg) {
-            height: 180px;
+            height: 240px;
             width: 200px;
           }
 
@@ -479,7 +485,7 @@
             margin-top: 10px;
 
             @include between($md, $lg) {
-              font-size: 0.9rem;
+              font-size: 1.2rem;
             }
           }
 
@@ -491,7 +497,7 @@
               font-weight: 300;
               margin-top: 0px;
               @include between($md, $lg) {
-                font-size: 0.5rem;
+                font-size: 0.8rem;
               }
             }
           }
@@ -537,6 +543,9 @@
       font-size: 4rem;
 
       @include between($md, $lg) {
+        font-size: 3rem;
+      }
+      @include between($xxs, $xs) {
         font-size: 3rem;
       }
     }
