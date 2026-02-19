@@ -28,7 +28,10 @@ function Forms() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/api/contato", formData); //await é usado para esperar a resposta da requisição antes de continuar a execução do código
+      await axios.post(
+        "https://api.barretoesantana.adv.br/api/contato",
+        formData,
+      ); //await é usado para esperar a resposta da requisição antes de continuar a execução do código
       //axios.post é usado para enviar os dados do formulário para o servidor
       alert("Mensagem enviada com sucesso!");
       setFormData({

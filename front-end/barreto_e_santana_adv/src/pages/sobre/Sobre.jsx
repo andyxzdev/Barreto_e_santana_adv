@@ -44,7 +44,7 @@ function Sobre() {
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
-              <p>contato@barretoesantana.com.br</p>
+              <p>contato@barretoesantana.adv.br</p>
             </div>
           </div>
         </div>

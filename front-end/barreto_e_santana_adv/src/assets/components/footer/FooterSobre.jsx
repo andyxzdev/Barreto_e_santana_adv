@@ -46,7 +46,7 @@ const FooterSobre = ({ customStyle }) => {
               </ul>
               <ul>
                 <img src={IconeEmail} alt="Email" />
-                <p>contato@barretoesantana.com.br</p>
+                <p>contato@barretoesantana.adv.br</p>
               </ul>
             </li>
 
