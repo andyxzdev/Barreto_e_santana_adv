@@ -18,7 +18,7 @@ import IconeInsta from "../../icons/insta.svg";
 import IconeLinkedin from "../../icons/linkedin.svg";
 import IconeFacebook from "../../icons/facebook.svg";
 
-const Footer = ({ customStyle }) => {
+const FooterSobre = ({ customStyle }) => {
   return (
     <footer>
       <div className="infos_cima">
@@ -109,22 +109,13 @@ const Footer = ({ customStyle }) => {
                   <a href="#topo">Início</a>
                 </li>
                 <li>
-                  <a href="#valores">Valores</a>
+                  <a href="#associados">Associados</a>
                 </li>
                 <li>
-                  <a href="#topo">Sobre nós</a>
+                  <a href="#motivos">Motivos para nos escolher</a>
                 </li>
                 <li>
-                  <a href="#resultados">Resultados</a>
-                </li>
-                <li>
-                  <a href="#areas">Áreas de atuação</a>
-                </li>
-                <li>
-                  <a href="#Feedbacks">Feedbacks</a>
-                </li>
-                <li>
-                  <a href="#contato">Como ajudamos</a>
+                  <a href="#como-trabalhamos">Como trabalhamos</a>
                 </li>
               </ul>
             </nav>
@@ -149,4 +140,4 @@ const Footer = ({ customStyle }) => {
   );
 };
 
-export default Footer;
+export default FooterSobre;

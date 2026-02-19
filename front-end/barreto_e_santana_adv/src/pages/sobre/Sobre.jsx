@@ -14,9 +14,9 @@ import ImgDra1 from "../../assets/arts/art1.png";
 import ImgDra2 from "../../assets/arts/art2.png";
 import ImgMotivos from "../../assets/arts/art_motivos.png";
 
-import Header from "../../assets/components/header/Header.jsx";
+import HeaderSobre from "../../assets/components/header/HeaderSobre.jsx";
 import "../../assets/components/header/Header.scss";
-import Footer from "../../assets/components/footer/Footer.jsx";
+import FooterSobre from "../../assets/components/footer/FooterSobre.jsx";
 import "../../assets/components/footer/Footer.scss";
 import ButtonContact from "../../assets/components/button/ButtonContact.jsx";
 import "../../assets/components/button/ButtonContact.scss";
@@ -24,7 +24,7 @@ import "../../assets/components/button/ButtonContact.scss";
 function Sobre() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       once: true,
       offset: 120,
       easing: "ease-in-cubic",
@@ -39,7 +39,7 @@ function Sobre() {
             <div className="contato1">
               <img src={IconPhone} alt="" />
               <p>
-                <p>(31) 72057190</p>
+                <p>(31) 7205-7198</p>
               </p>
             </div>
             <div className="contato2">
@@ -48,15 +48,17 @@ function Sobre() {
             </div>
           </div>
         </div>
-        <Header />
-        <section className="Topo-sobre">
+        <HeaderSobre />
+        <section className="Topo-sobre" id="topo">
           <div className="infos-topo">
-            <h1>Excelência e Estratégia em Direito do Trabalho</h1>
-            <h3>
+            <h1 data-aos="fade-up">
+              Excelência e Estratégia em Direito do Trabalho
+            </h1>
+            <h3 data-aos="fade-down">
               Defesa técnica, atendimento personalizado e atuação estratégica
               para proteger seus direitos com segurança e responsabilidade.
             </h3>
-            <h3>
+            <h3 data-aos="fade-down">
               Com sede em Belo Horizonte e atendimento em todo o Brasil, atuamos
               com compromisso, ética e profundidade jurídica para transformar
               desafios trabalhistas em soluções eficazes.
@@ -65,37 +67,52 @@ function Sobre() {
           </div>
         </section>
 
-        <section className="Sobre">
+        <section className="Sobre" id="associados">
           <div className="Titulo">
-            <h1>
+            <h1 data-aos="fade-up">
               Quem está por trás<br></br>da Barreto & Santana
             </h1>
           </div>
 
           <div className="infos">
             <div className="adv1">
-              <div className="texto">
+              <div className="texto" data-aos="fade-left">
                 <h1>Dra. Anna Clara Barreto</h1>
                 <li>
                   <h3>
-                    Advogada com atuação sólida nas áreas de Direito Civil,
-                    Família e Consumidor.
+                    Pós-graduada em Direito Civil e Processo Civil, com atuação
+                    estratégica em Direito Empresarial, Civil e Contratual.
+                    Experiência na elaboração, revisão e gestão de contratos,
+                    análise de riscos e prevenção de demandas judiciais.
                   </h3>
                 </li>
                 <li>
                   <h3>
-                    Reconhecida pela postura estratégica, atendimento humanizado
-                    e dedicação em buscar as melhores soluções jurídicas para
-                    seus clientes.
+                    Atuo na estruturação jurídica de operações empresariais,
+                    resolução de conflitos e orientação técnica para negócios
+                    que precisam de segurança, conformidade e tomada de decisão
+                    precisa. Trabalho com enfoque em eficiência, fundamentação
+                    sólida e soluções objetivas, garantindo suporte jurídico
+                    alinhado às necessidades práticas de cada caso.
                   </h3>
                 </li>
               </div>
-              <img src={ImgDra1} alt="" className="Img_dra1" />
+              <img
+                src={ImgDra1}
+                alt=""
+                className="Img_dra1"
+                data-aos="fade-right"
+              />
             </div>
             <div className="adv2">
-              <img src={ImgDra2} alt="" className="Img_dra2" />
-              <div className="texto">
-                <h1>Dra. Anna Clara Barreto</h1>
+              <img
+                src={ImgDra2}
+                alt=""
+                className="Img_dra2"
+                data-aos="fade-right"
+              />
+              <div className="texto" data-aos="fade-left">
+                <h1>Dra. Ludineia Santana</h1>
                 <li>
                   <h3>
                     Advogada com atuação sólida nas áreas de Direito Civil,
@@ -114,7 +131,7 @@ function Sobre() {
           </div>
         </section>
 
-        <section className="Areas">
+        <section className="Areas" id="motivos">
           <div className="infos">
             <img src={ImgMotivos} alt="" />
             <div className="textos">
@@ -195,38 +212,58 @@ function Sobre() {
           </div>
         </section>
 
-        <section className="Como-trabalhamos">
+        <section className="Como-trabalhamos" id="como-trabalhamos">
           <div className="infos">
-            <h1>Como trabalhamos</h1>
+            <h1 data-aos="fade-left">Como trabalhamos</h1>
             <div className="quadrados-espaco">
-              <div className="quadrado">
+              <div className="quadrado" data-aos="fade-up">
                 <img src={IconSearch} alt="" />
                 <h3>Análise detalhada do caso</h3>
                 <p>
-                  Estudo técnico da documentação e identificação das melhores
-                  estratégias jurídicas.
+                  Avaliação minuciosa de documentos, contexto fático e riscos
+                  jurídicos para definição das melhores estratégias iniciais.
+                  Foco em precisão técnica e diagnóstico completo.
                 </p>
               </div>
-              <div className="quadrado">
+              <div className="quadrado" data-aos="fade-down">
                 <img src={IconPapper} alt="" />
-                <h3>Planejamento estratégico</h3>
-                <p>Definição de abordagem personalizada para cada situação.</p>
+                <h3>
+                  Consultoria estratégica em Direito Empresarial, Civil e
+                  Contratual
+                </h3>
+                <p>
+                  Atuação voltada à prevenção de conflitos, estruturação de
+                  contratos, blindagem jurídica e orientação contínua para
+                  empresas que buscam segurança, conformidade e redução de
+                  riscos.
+                </p>
               </div>
-              <div className="quadrado">
+              <div className="quadrado" data-aos="fade-up">
                 <img src={IconDirCivil} alt="" />
-                <h3>Defesa técnica consistente</h3>
-                <p>Atuação firme, fundamentada e focada em resultados.</p>
+                <h3>
+                  Gestão de contencioso e prevenção de passivo trabalhista
+                  empresarial
+                </h3>
+                <p>
+                  Análise de rotinas internas, revisão de procedimentos,
+                  orientação sobre riscos trabalhistas e condução de defesas
+                  técnicas para mitigar passivo atual e futuro.
+                </p>
               </div>
-              <div className="quadrado">
+              <div className="quadrado" data-aos="fade-down">
                 <img src={IconHands} alt="" />
-                <h3>Acompanhamento contínuo</h3>
-                <p>Suporte durante todo o andamento processual.</p>
+                <h3>Acompanhamento e suporte contínuo</h3>
+                <p>
+                  Estudo criterioso da documentação, do contexto e dos riscos
+                  jurídicos para definir a melhor estratégia desde o início, com
+                  precisão técnica e visão completa da situação.
+                </p>
               </div>
             </div>
             <ButtonContact Text="Agendar atendimento" />
           </div>
         </section>
-        <Footer />
+        <FooterSobre />
       </main>
     </>
   );

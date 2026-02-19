@@ -41,6 +41,7 @@
 
     @include between($xxs, $xs) {
       font-size: 2.4rem;
+      margin-top: 13vh;
     }
   }
 }

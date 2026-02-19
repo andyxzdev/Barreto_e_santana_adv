@@ -150,13 +150,40 @@ footer {
               color: #cfcfcf;
 
               @include max($sm) {
-                font-size: 13px;
+                font-size: 17px;
               }
 
               @include between($md, $lg) {
                 font-size: 11px;
               }
             }
+          }
+        }
+      }
+
+      .Fale_conosco_footer {
+        & .ButtonTopo {
+          height: 1.4rem;
+          width: 120px;
+          border-radius: 20px;
+          font-size: 13px;
+          margin-top: 10px;
+          cursor: pointer;
+          border: none;
+          background-color: #ffffff;
+          color: #111111;
+          transition: all 0.5s;
+
+          @include max($sm) {
+            width: 100%;
+            margin-top: 1rem;
+          }
+
+          &:hover {
+            border-radius: 0;
+            background-color: #111111;
+            border: solid 2px #f4df8f;
+            color: #f4df8f;
           }
         }
       }
@@ -202,7 +229,7 @@ footer {
             color: #cfcfcf;
 
             @include max($sm) {
-              font-size: 13px;
+              font-size: 17px;
             }
 
             @include between($md, $lg) {

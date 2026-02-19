@@ -513,22 +513,25 @@
 
 .Como-trabalhamos {
   width: 100%;
-  height: 80vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
+  @include between($xl, $xxl) {
+    height: 100vh;
+  }
   @include between($md, $lg) {
     height: 120vh;
   }
 
   @include between($xs, $sm) {
-    height: 190vh;
+    height: 260vh;
   }
 
   @include between($xxs, $xs) {
-    height: 210vh;
+    height: 275vh;
   }
 
   .infos {
@@ -578,7 +581,7 @@
 
       .quadrado {
         background-color: #1f1f1f;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -588,29 +591,38 @@
         gap: 30px;
         padding: 0 20px;
 
+        @include between($xl, $xxl) {
+          height: 45vh;
+        }
         @include between($md, $lg) {
-          height: 40vh;
+          height: 55vh;
         }
 
         @include between($xs, $sm) {
-          height: 30vh;
+          height: 45vh;
           width: 60vw;
         }
 
         @include between($xxs, $xs) {
-          height: 30vh;
+          height: 50vh;
           width: 80vw;
         }
 
         img {
           width: 60px;
 
+          @include between($xl, $xxl) {
+            width: 45px;
+          }
           @include between($md, $lg) {
-            width: 40px;
+            width: 35px;
           }
 
           @include between($xxs, $xs) {
             width: 40px;
+          }
+          @include between($xs, $sm) {
+            width: 30px;
           }
         }
 
@@ -627,6 +639,13 @@
           color: #ffffff;
           font-weight: 300;
           font-size: 0.8rem;
+
+          @include between($xs, $sm) {
+            font-size: 1rem;
+          }
+          @include between($xxs, $xs) {
+            font-size: 1rem;
+          }
         }
       }
     }

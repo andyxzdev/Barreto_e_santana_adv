@@ -90,7 +90,7 @@
   }
 }
 
-.Topo {
+.Topo-inicio {
   width: 100%;
   height: 70vh;
   background-image: url("../../assets/banners/Banner-topo.jpg");
@@ -110,7 +110,7 @@
   @include between($xxs, $xs) {
     background-image: url("../../assets/banners/Banner-topo2.jpg");
 
-    height: 100vh;
+    height: 68vh;
   }
 
   & .infos-topo {
@@ -132,6 +132,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      padding: 0;
     }
 
     @include between($xxs, $xs) {
@@ -139,6 +140,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      padding: 0;
     }
 
     & h1 {
@@ -348,42 +350,46 @@
   height: auto;
   text-align: center;
   align-items: center;
+  margin-top: -100px;
+  margin-bottom: 100px;
 
   @include between($md, $lg) {
-    margin-top: 70px;
+    margin-top: -70px;
+    margin-bottom: 70px;
   }
 
   @include between($xs, $sm) {
     margin-top: -150px;
+    margin-bottom: 150px;
   }
 
-  .Titulo {
-    font-size: 2.3rem;
-    color: #a98c58;
+  // .Titulo {
+  //   font-size: 2.3rem;
+  //   color: #a98c58;
 
-    h1 {
-      font-weight: bold;
+  //   h1 {
+  //     font-weight: bold;
 
-      @include between($xl, $xxl) {
-        font-size: 4rem;
-      }
+  //     @include between($xl, $xxl) {
+  //       font-size: 4rem;
+  //     }
 
-      @include between($md, $lg) {
-        font-size: 3rem;
-      }
+  //     @include between($md, $lg) {
+  //       font-size: 3rem;
+  //     }
 
-      @include between($xs, $sm) {
-        font-size: 3rem;
-      }
+  //     @include between($xs, $sm) {
+  //       font-size: 3rem;
+  //     }
 
-      @include between($xxs, $xs) {
-        font-size: 3rem;
-      }
-    }
-  }
+  //     @include between($xxs, $xs) {
+  //       font-size: 3rem;
+  //     }
+  //   }
+  // }
 
   .infos {
-    margin-top: 10vh;
+    margin-top: 0vh;
     display: flex;
     justify-content: space-between;
     align-items: center;

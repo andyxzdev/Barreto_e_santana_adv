@@ -52,7 +52,7 @@ function App() {
           <div className="infos">
             <div className="contato1">
               <img src={IconPhone} alt="" />
-              <p>(31) 72057190</p>
+              <p>(31) 7205-7198</p>
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
@@ -61,14 +61,15 @@ function App() {
           </div>
         </div>
         <Header />
-        <section className="Topo">
+        <section className="Topo-inicio">
           <div className="infos-topo" id="topo">
             <h1>
               Defendendo seus direitos com ética, estratégia e compromisso.
             </h1>
             <h3>
-              Atuamos com seriedade e proximidade em todo o Brasil, oferecendo
-              soluções jurídicas claras, humanas e eficazes para cada cliente.
+              Atuamos com seriedade e proximidade em Belo Horizonte e em todo o
+              Brasil, oferecendo soluções jurídicas claras, humanas e eficazes
+              para cada cliente.
             </h3>
             {/* <button
               className="Button_hero"
@@ -107,9 +108,9 @@ function App() {
 
         <section className="Atendimento" id="atendimento">
           <div className="Titulo" data-aos="fade-up">
-            <h1>
+            {/* <h1>
               Atendimento em Belo Horizonte<br></br>e em todo o Brasil
-            </h1>
+            </h1> */}
           </div>
 
           <div className="infos">
@@ -330,15 +331,24 @@ function App() {
               </li>
               <li data-aos="fade-up">
                 <h3>
-                  Cada caso é único. Por isso, oferecemos um atendimento
-                  próximo, personalizado e focado na melhor estratégia jurídica
-                  para você.
+                  Cada situação jurídica demanda atenção individualizada e
+                  estratégia bem definida. Por isso, atuamos com análise técnica
+                  detalhada, planejamento jurídico estruturado e acompanhamento
+                  constante para assegurar a melhor condução do seu caso.
                 </h3>
               </li>
               <li data-aos="fade-down">
                 <h3>
-                  Preencha o formulário ao lado e nossa equipe entrará em
-                  contato o mais breve possível.
+                  Nosso compromisso é oferecer orientação clara, defesa
+                  consistente e suporte próximo durante todas as fases do
+                  processo, sempre com transparência e responsabilidade.
+                </h3>
+              </li>
+              <li data-aos="fade-down">
+                <h3>
+                  Preencha o formulário ao lado e nossa equipe retornará o
+                  contato com agilidade para avaliar sua demanda e indicar a
+                  melhor estratégia jurídica.
                 </h3>
               </li>
             </div>
