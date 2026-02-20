@@ -50,14 +50,14 @@ const FooterSobre = ({ customStyle }) => {
               </ul>
             </li>
 
-            <button
-              className="ButtonTopo"
-              onClick={() => {
-                toggleMenu();
-                window.open("https://wa.me/553172057198", "_blank");
-              }}
-            >
-              Trabalhe conosco
+            <button className="ButtonTopo">
+              <a
+                href="https://api.whatsapp.com/send?phone=553172057198&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Trabalhe conosco
+              </a>
             </button>
           </div>
           <div className="Areas_atuacao_footer">

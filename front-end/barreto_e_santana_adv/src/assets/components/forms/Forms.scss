@@ -2,7 +2,7 @@
 
 .formularioDiv {
   width: 75rem;
-  height: 80vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   @include between($md, $lg) {
     height: auto;
     width: 90%;
-    height: 125vh;
+    height: auto;
   }
 
   @include between($xs, $sm) {

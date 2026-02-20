@@ -4,12 +4,15 @@
   padding: 10vh 20px;
   text-align: center;
   width: 100%;
-  height: 70vh;
+  height: auto;
   background-color: #1f1f1f;
   border-radius: 120px 120px 0px 0px;
 
   @include between($md, $lg) {
-    height: 90vh;
+    height: auto;
+  }
+  @include between($xs, $sm) {
+    height: auto;
   }
   @include between($xxs, $xs) {
     border-radius: 40px 40px 0px 0px;
@@ -77,6 +80,13 @@
   font-weight: bold;
   color: #f5d88c;
   margin-bottom: 10px;
+
+  @include between($xxs, $xs) {
+    font-size: 3.5rem;
+  }
+  @include between($xs, $sm) {
+    font-size: 4rem;
+  }
 }
 
 .result-item {

@@ -104,7 +104,7 @@
   @include between($xs, $sm) {
     background-image: url("../../assets/banners/Banner-topo2.jpg");
 
-    height: 75vh;
+    height: 80vh;
   }
 
   @include between($xxs, $xs) {
@@ -158,7 +158,7 @@
 
       @include between($xs, $sm) {
         font-size: 2.5rem;
-        margin-top: 23vh;
+        margin-top: 38vh;
       }
 
       @include between($xxs, $xs) {
@@ -227,40 +227,35 @@
 
 .Muito_alem {
   width: 100%;
-  height: 80vh;
-  background-color: #ffffff;
+  height: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 10vh 0;
 
   .infoss {
     background-color: #1f1f1f;
     width: 60%;
-    height: 54vh;
+    height: auto;
     border-radius: 40px;
     padding: 30px;
-    margin-top: 13vh;
     margin-left: 20vw;
 
     @include between($xl, $xxl) {
       width: 60vw;
-      height: 60vh;
     }
 
     @include between($md, $lg) {
       width: 60vw;
-      height: 70vh;
     }
 
     @include between($xs, $sm) {
       width: 80vw;
-      height: 47vh;
       margin-left: 10vw;
     }
 
     @include between($xxs, $xs) {
       width: 90vw;
-      height: 50vh;
       margin-left: 5vw;
     }
 
@@ -350,8 +345,7 @@
   height: auto;
   text-align: center;
   align-items: center;
-  margin-top: -100px;
-  margin-bottom: 100px;
+  padding: 15vh 0;
 
   @include between($md, $lg) {
     margin-top: -70px;
@@ -360,7 +354,7 @@
 
   @include between($xs, $sm) {
     margin-top: -150px;
-    margin-bottom: 150px;
+    // margin-bottom: 150px;
   }
 
   // .Titulo {
@@ -614,8 +608,14 @@
   @include between($md, $lg) {
     height: auto;
   }
+  @include between($xs, $sm) {
+    // padding: 0vh;
+  }
+  @include between($xxs, $xs) {
+    height: auto;
+  }
   @include between($xl, $xxl) {
-    padding: 2vh;
+    // padding: 2vh;
   }
 
   .infos {
@@ -623,9 +623,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
-    @include between($md, $lg) {
+    @include between($xl, $xxl) {
       margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    @include between($md, $lg) {
+      margin-top: 50px;
       margin-bottom: 100px;
     }
 
@@ -634,6 +640,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: 0;
     }
 
     @include between($xxs, $xs) {
@@ -641,7 +648,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 10vh;
+      margin-top: 0;
     }
 
     & .Img-art {
@@ -661,7 +668,7 @@
 
       @include between($xxs, $xs) {
         width: 70vw;
-        margin-top: 240px;
+        margin-top: 50px;
       }
     }
 
@@ -688,7 +695,7 @@
           }
 
           @include between($xxs, $xs) {
-            font-size: 4rem;
+            font-size: 2.5rem;
             margin-top: 100px;
           }
         }
@@ -724,6 +731,12 @@
         align-items: center;
         justify-content: center;
         padding-left: 10px;
+        @include between($xs, $sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
       .coluna {
@@ -733,6 +746,13 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+
+        @include between($xs, $sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
       }
       .area1 {

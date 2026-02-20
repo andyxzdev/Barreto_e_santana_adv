@@ -3,22 +3,24 @@ import "./FeedbackCarousel.scss";
 
 const feedbacks = [
   {
-    name: "Ana Carolina",
-    role: "Profissão | Lorem ipsum",
-    text: "Atendimento impecável, sempre muito atenciosas e claras em todas as etapas do processo.",
-    avatar: "https://i.pravatar.cc/100?img=32",
+    name: "Cliente 1",
+    role: "Ação contra concessionária",
+    text: "Recebi cobranças superiores a dez vezes a média mensal e corria risco de corte no fornecimento de água, mesmo com uma recém-nascida em casa. A equipe atuou com rapidez e conseguimos decisão favorável suspendendo a cobrança e garantindo meus direitos.",
   },
   {
-    name: "Ana Carolina",
-    role: "Profissão | Lorem ipsum",
-    text: "Equipe extremamente profissional, entrega acima do esperado.",
-    avatar: "https://i.pravatar.cc/100?img=44",
+    name: "Cliente 2",
+    role: "Defesa em Execução",
+    text: "Estava prestes a perder meu imóvel em leilão. Com a atuação estratégica do escritório, obtivemos tutela de urgência suspendendo o leilão e a execução principal. Profissionalismo e segurança do início ao fim.",
   },
   {
-    name: "Ana Carolina",
-    role: "Profissão | Lorem ipsum",
-    text: "Comunicação clara, processo ágil e resultado impecável.",
-    avatar: "https://i.pravatar.cc/100?img=56",
+    name: "Cliente 3",
+    role: "Execução Fiscal",
+    text: "Fui surpreendido com cobrança indevida de FGTS na Justiça do Trabalho. O escritório demonstrou a incompetência absoluta do juízo e conseguimos decisão favorável, garantindo o processamento correto na Justiça Federal.",
+  },
+  {
+    name: "Cliente 4",
+    role: "Medida Urgente",
+    text: "Precisávamos de uma resposta rápida e técnica. A dedicação da equipe foi essencial para que o juiz reconhecesse nosso direito em sede de tutela de urgência.",
   },
 ];
 
@@ -83,7 +85,9 @@ export default function FeedbackCarousel() {
             {[...feedbacks, feedbacks[0]].map((item, i) => (
               <div className="card" key={i}>
                 <div className="header">
-                  <img src={item.avatar} alt={item.name} />
+                  <div className="avatar-number">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
                   <div>
                     <strong>{item.name}</strong>
                     <span>{item.role}</span>
