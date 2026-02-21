@@ -346,6 +346,9 @@
       gap: 30px;
       padding: 0vh;
     }
+    @include between($xl, $xxl) {
+      gap: 50px;
+    }
 
     @include between($xs, $sm) {
       display: flex;
@@ -390,6 +393,7 @@
         @include between($xs, $sm) {
           padding: 0 0px;
         }
+
         h1 {
           color: #f4df8f;
           font-size: 5rem;
@@ -397,7 +401,7 @@
 
           @include between($xl, $xxl) {
             font-size: 3rem;
-            width: 80%;
+            width: 100%;
           }
 
           @include between($md, $lg) {
@@ -426,10 +430,10 @@
 
           @include between($md, $lg) {
             width: 100%;
-            padding: 0 80px;
+            padding: 0 0px;
           }
           @include between($xl, $xxl) {
-            width: 80%;
+            width: 100%;
           }
 
           @include between($xs, $sm) {
@@ -446,16 +450,22 @@
           }
         }
         .area1 {
-          padding: 0 30px;
+          padding: 20px;
           margin-top: 70px;
           background-color: #2b2b2b;
           border-radius: 30px;
-          height: 300px;
-          width: 350px;
+          height: 250px;
+          width: auto;
+          align-items: center;
+          justify-content: center;
 
+          @include between($xl, $xxl) {
+            height: 280px;
+            width: auto;
+          }
           @include between($md, $lg) {
-            height: 240px;
-            width: 200px;
+            height: 250px;
+            width: auto;
           }
 
           @include between($xxs, $xs) {
@@ -465,16 +475,22 @@
 
           .motivo-numero {
             color: #f4df8f;
-            font-weight: 400;
+            font-weight: 200;
             margin-top: 10px;
-            font-size: 6rem;
+            font-size: 4rem;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
 
             @include between($md, $lg) {
-              font-size: 3rem;
+              font-size: 2rem;
             }
 
             @include between($xxs, $xs) {
               font-size: 4rem;
+            }
+            @include between($xl, $xxl) {
+              font-size: 3rem;
             }
           }
 
@@ -485,6 +501,10 @@
             margin-top: 10px;
 
             @include between($md, $lg) {
+              font-size: 1.2rem;
+              margin-top: 20px;
+            }
+            @include between($xl, $xxl) {
               font-size: 1.2rem;
             }
           }
@@ -502,9 +522,10 @@
             }
           }
 
-          img {
-            width: 1.2vw;
-          }
+          // img {
+          //   width: 1.2vw;
+          //   display: none;
+          // }
         }
       }
     }

@@ -629,10 +629,12 @@
     @include between($xl, $xxl) {
       margin-top: 100px;
       margin-bottom: 100px;
+      gap: 0;
     }
     @include between($md, $lg) {
       margin-top: 50px;
       margin-bottom: 100px;
+      gap: 0;
     }
 
     @include between($xs, $sm) {
@@ -655,7 +657,7 @@
       width: 50vw;
 
       @include between($xl, $xxl) {
-        width: 40vw;
+        width: 35vw;
       }
 
       @include between($xs, $sm) {

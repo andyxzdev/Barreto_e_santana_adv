@@ -227,10 +227,7 @@ function Sobre() {
               </div>
               <div className="quadrado" data-aos="fade-down">
                 <img src={IconPapper} alt="" />
-                <h3>
-                  Consultoria estratégica em Direito Empresarial, Civil e
-                  Contratual
-                </h3>
+                <h3>Consultoria Civil e Contratual</h3>
                 <p>
                   Atuação voltada à prevenção de conflitos, estruturação de
                   contratos, blindagem jurídica e orientação contínua para
@@ -240,10 +237,7 @@ function Sobre() {
               </div>
               <div className="quadrado" data-aos="fade-up">
                 <img src={IconDirCivil} alt="" />
-                <h3>
-                  Gestão de contencioso e prevenção de passivo trabalhista
-                  empresarial
-                </h3>
+                <h3>Contencioso e prevenção trabalhista</h3>
                 <p>
                   Análise de rotinas internas, revisão de procedimentos,
                   orientação sobre riscos trabalhistas e condução de defesas
