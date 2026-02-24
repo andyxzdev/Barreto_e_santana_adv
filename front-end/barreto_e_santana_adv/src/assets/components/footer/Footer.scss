@@ -239,7 +239,7 @@ footer {
             }
 
             @include between($md, $lg) {
-              font-size: 14px;
+              font-size: 18px;
             }
           }
         }
@@ -279,7 +279,7 @@ footer {
                 }
 
                 @include between($md, $lg) {
-                  font-size: 15px;
+                  font-size: 18px;
                 }
 
                 &:hover {
