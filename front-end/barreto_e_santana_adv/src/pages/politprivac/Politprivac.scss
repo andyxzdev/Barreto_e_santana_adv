@@ -1,0 +1,117 @@
+@use "../../styles/breakpoints" as *;
+
+.Contatos-topo {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  background-color: #1f1f1f;
+
+  @include between($xxs, $xs) {
+    height: 12vh;
+  }
+
+  & .infos {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+
+    @include between($xl, $xxl) {
+      gap: 30px;
+    }
+
+    @include between($xxs, $xs) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 25px 70px;
+      text-align: center;
+    }
+
+    & .contato1 {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+
+      @include between($xxs, $xs) {
+        margin-left: 0px;
+      }
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+
+        @include between($xs, $sm) {
+          width: 2vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    & .contato2 {
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1.2vw;
+
+        @include between($xxs, $xs) {
+          width: 4vw;
+        }
+        @include between($xs, $sm) {
+          width: 2vw;
+        }
+      }
+
+      & p {
+        width: 100%;
+        font-size: 1rem;
+        color: #fff;
+        margin-left: 10px;
+
+        @include between($md, $lg) {
+          font-size: 1rem;
+        }
+
+        @include between($xxs, $xs) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.Topo-politic {
+  height: auto;
+  width: 100%;
+  padding: 20vh 30vh;
+
+  @include max($sm) {
+    padding: 10vh 7vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #a98c58;
+  }
+
+  h3 {
+    margin-top: 5vh;
+  }
+}

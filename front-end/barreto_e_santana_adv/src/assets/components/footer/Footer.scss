@@ -316,6 +316,21 @@ footer {
       align-items: center;
       list-style: none;
 
+      .Politic {
+        font-size: 1rem;
+        margin-bottom: 20px;
+
+        & a {
+          color: #ffffff; // cor que você quiser
+          text-decoration: none;
+          font-family: "Inter", sans-serif;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
       .direitos_reservados_texto {
         font-size: 1rem;
         color: #ffffff;

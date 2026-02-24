@@ -106,7 +106,7 @@ const FooterSobre = ({ customStyle }) => {
               <h1>Links Rápidos</h1>
               <ul>
                 <li>
-                  <a href="#topo">Início</a>
+                  <Link to="/home">Início</Link>
                 </li>
                 <li>
                   <a href="#associados">Associados</a>
@@ -125,6 +125,9 @@ const FooterSobre = ({ customStyle }) => {
 
       <div className="infos_baixo">
         <li>
+          <p className="Politic">
+            <Link to="/politprivac">Política de Privacidade</Link>
+          </p>
           <p className="direitos_reservados_texto">
             {" "}
             © 2026 Barreto & Santana Advocacia | todos os direitos reservados
