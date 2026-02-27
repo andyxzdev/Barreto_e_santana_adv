@@ -137,7 +137,7 @@ function Sobre() {
             <div className="textos">
               <div className="titulo">
                 <h1>
-                  6 motivos do porque escolher a Barreto & Santana Advogados
+                  6 motivos do porquê escolher a Barreto & Santana Advogados
                 </h1>
               </div>
 
@@ -148,8 +148,9 @@ function Sobre() {
                     <h1>Experiência Comprovada</h1>
                     <li>
                       <p>
-                        Atuação sólida em demandas trabalhistas, com histórico
-                        consistente de resultados.
+                        Atuação em diversas áreas do Direito com estratégia e
+                        precisão. Soluções práticas, redução de riscos e clareza
+                        em cada etapa.
                       </p>
                     </li>
                   </div>
@@ -181,8 +182,9 @@ function Sobre() {
                     <h1>Estratégia Jurídica Inteligente</h1>
                     <li>
                       <p>
-                        Análise técnica detalhada para maximizar suas chances de
-                        êxito.
+                        Definimos estratégias técnicas após análise detalhada do
+                        caso. Nosso foco é ampliar suas chances reais de êxito
+                        com clareza.
                       </p>
                     </li>
                   </div>

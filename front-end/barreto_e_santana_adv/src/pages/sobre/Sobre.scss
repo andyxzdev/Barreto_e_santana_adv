@@ -454,22 +454,18 @@
           margin-top: 70px;
           background-color: #2b2b2b;
           border-radius: 30px;
-          height: 250px;
+          height: auto;
           width: auto;
           align-items: center;
           justify-content: center;
 
           @include between($xl, $xxl) {
-            height: 280px;
-            width: auto;
+            // width: auto;
           }
           @include between($md, $lg) {
-            height: 250px;
-            width: auto;
           }
 
           @include between($xxs, $xs) {
-            height: 260px;
             width: 300px;
           }
 

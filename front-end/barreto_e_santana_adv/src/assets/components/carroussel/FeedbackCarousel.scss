@@ -110,9 +110,10 @@
     }
 
     @include between($xxs, $xs) {
-      width: 60vw;
+      width: auto;
       height: auto;
-      padding: 20px;
+      padding: 40px 30px;
+      margin-bottom: 5vh;
     }
 
     .header {
@@ -134,9 +135,13 @@
         object-fit: cover;
 
         @include between($xs, $sm) {
-          width: 80px;
+          width: 60px;
           height: 60px;
         }
+        // @include between($xxs, $sm) {
+        //   width: 60px;
+        //   height: 60px;
+        // }
       }
 
       div {
@@ -169,6 +174,10 @@
         font-size: 0.9rem;
         max-width: 100%;
       }
+      @include between($xxs, $xs) {
+        font-size: 0.9rem;
+        width: 85%;
+      }
     }
 
     .stars {
@@ -179,17 +188,17 @@
   }
 }
 
-.avatar-number {
-  width: 80px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f4df8f;
-  font-size: 3rem;
+// .avatar-number {
+//   width: 80px;
+//   height: 70px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #f4df8f;
+//   font-size: 3rem;
 
-  @include between($xs, $sm) {
-    width: 80px;
-    height: 60px;
-  }
-}
+//   @include between($xs, $sm) {
+//     width: 80px;
+//     height: 60px;
+//   }
+// }

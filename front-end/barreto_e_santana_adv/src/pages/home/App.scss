@@ -787,10 +787,10 @@
           p {
             font-weight: 300;
             margin-top: 0px;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
 
             @include between($md, $lg) {
-              font-size: 0.6rem;
+              font-size: 0.9rem;
             }
           }
         }
