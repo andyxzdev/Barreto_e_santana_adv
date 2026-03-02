@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import "./FeedbackCarousel.scss";
 
+import Img1 from "../../feedbacks/img1.png";
+import Img2 from "../../feedbacks/img2.png";
+
 const feedbacks = [
   {
     name: "Juliana Ferreira Lima",
@@ -12,13 +15,13 @@ const feedbacks = [
     name: "Mariana Souza Ribeiro",
     role: "Defesa em Execução",
     text: "Estava prestes a perder meu imóvel em leilão. Com a atuação estratégica do escritório, obtivemos tutela de urgência suspendendo o leilão e a execução principal. Profissionalismo e segurança do início ao fim.",
-    avatar: "https://i.pravatar.cc/100?img=44",
+    avatar: Img2,
   },
   {
     name: "Rafael Martins Costa",
     role: "Execução Fiscal",
     text: "Fui surpreendido com cobrança indevida de FGTS na Justiça do Trabalho. O escritório demonstrou a incompetência absoluta do juízo e conseguimos decisão favorável, garantindo o processamento correto na Justiça Federal.",
-    avatar: "https://i.pravatar.cc/100?img=56",
+    avatar: Img1,
   },
   {
     name: "Carlos Henrique Almeida",

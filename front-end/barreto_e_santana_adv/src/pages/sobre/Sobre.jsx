@@ -115,15 +115,16 @@ function Sobre() {
                 <h1>Dra. Ludineia Santana</h1>
                 <li>
                   <h3>
-                    Advogada com atuação sólida nas áreas de Direito Civil,
-                    Família e Consumidor.
+                    Especialista em Direito Trabalhista e Previdenciário, com
+                    atuação estratégica, ética e comprometida com resultados e
+                    segurança jurídica.
                   </h3>
                 </li>
                 <li>
                   <h3>
-                    Reconhecida pela postura estratégica, atendimento humanizado
-                    e dedicação em buscar as melhores soluções jurídicas para
-                    seus clientes.
+                    Advogada com atuação estratégica nas áreas de sua
+                    especialidade, conduzindo cada caso com técnica, ética e
+                    foco em resultados seguros.
                   </h3>
                 </li>
               </div>
