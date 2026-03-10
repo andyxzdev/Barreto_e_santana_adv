@@ -25,15 +25,24 @@ const FooterSobre = ({ customStyle }) => {
         <div className="Coluna_esq">
           <img src={Logo} alt="Logo Barreto & Santana" />
           <li>
-            <ul href="https://www.instagram.com/andyxdev_/">
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeInsta} alt="Instagram" />
-            </ul>
-            <ul>
+            </a>
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeLinkedin} alt="LinkedIn" />
-            </ul>
-            <ul>
+            </a>
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeFacebook} alt="Facebook" className="icon-face" />
-            </ul>
+            </a>
           </li>
         </div>
         <div className="Coluna_meio">

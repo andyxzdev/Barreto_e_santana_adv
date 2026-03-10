@@ -84,6 +84,9 @@ footer {
             @include between($md, $lg) {
               width: 11px;
             }
+            @include max($sm) {
+              width: 10px;
+            }
           }
 
           img {
