@@ -3,31 +3,33 @@ import "./FeedbackCarousel.scss";
 
 import Img1 from "../../feedbacks/img1.png";
 import Img2 from "../../feedbacks/img2.png";
+import Img3 from "../../feedbacks/img3.jpeg";
+import Img4 from "../../feedbacks/img4.jpeg";
 
 const feedbacks = [
   {
-    name: "Juliana Ferreira Lima",
+    name: "Letícia Quintano",
     role: "Ação contra concessionária",
     text: "Recebi cobranças superiores a dez vezes a média mensal e corria risco de corte no fornecimento de água, mesmo com uma recém-nascida em casa. A equipe atuou com rapidez e conseguimos decisão favorável suspendendo a cobrança e garantindo meus direitos.",
-    avatar: "https://i.pravatar.cc/100?img=32",
+    avatar: Img4,
   },
   {
-    name: "Mariana Souza Ribeiro",
+    name: "Elaine Ambrósio",
     role: "Defesa em Execução",
     text: "Estava prestes a perder meu imóvel em leilão. Com a atuação estratégica do escritório, obtivemos tutela de urgência suspendendo o leilão e a execução principal. Profissionalismo e segurança do início ao fim.",
     avatar: Img2,
   },
   {
-    name: "Rafael Martins Costa",
-    role: "Execução Fiscal",
-    text: "Fui surpreendido com cobrança indevida de FGTS na Justiça do Trabalho. O escritório demonstrou a incompetência absoluta do juízo e conseguimos decisão favorável, garantindo o processamento correto na Justiça Federal.",
+    name: "Wallace Reis",
+    role: "Feedback",
+    text: "Me acompanham desde o início da minha primeira empresa. são muito competentes!. Recomendo.",
     avatar: Img1,
   },
   {
-    name: "Carlos Henrique Almeida",
+    name: "Amanda Ferreira",
     role: "Medida Urgente",
     text: "Precisávamos de uma resposta rápida e técnica. A dedicação da equipe foi essencial para que o juiz reconhecesse nosso direito em sede de tutela de urgência.",
-    avatar: "https://i.pravatar.cc/100?img=12",
+    avatar: Img3,
   },
 ];
 
@@ -89,7 +91,7 @@ export default function FeedbackCarousel() {
 
         <div className="viewport">
           <div className="track" ref={trackRef}>
-            {[...feedbacks, feedbacks[0]].map((item, i) => (
+            {[...feedbacks, ...feedbacks, feedbacks[0]].map((item, i) => (
               <div className="card" key={i}>
                 <div className="header">
                   {/* <div className="avatar-number">

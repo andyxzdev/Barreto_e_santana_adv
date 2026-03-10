@@ -25,15 +25,24 @@ const Footer = ({ customStyle }) => {
         <div className="Coluna_esq">
           <img src={Logo} alt="Logo Barreto & Santana" />
           <li>
-            <ul href="https://www.instagram.com/andyxdev_/">
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeInsta} alt="Instagram" />
-            </ul>
-            <ul>
+            </a>
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeLinkedin} alt="LinkedIn" />
-            </ul>
-            <ul>
+            </a>
+            <a
+              href="https://www.instagram.com/barretoesantanaadv/"
+              target="_blank"
+            >
               <img src={IconeFacebook} alt="Facebook" className="icon-face" />
-            </ul>
+            </a>
           </li>
         </div>
         <div className="Coluna_meio">
@@ -139,7 +148,7 @@ const Footer = ({ customStyle }) => {
           </p>
           <p className="direitos_reservados_texto">
             {" "}
-            © 2026 Barreto & Santana Advocacia | todos os direitos reservados
+            © 2026 Barreto & Santana Advocacia | Todos os direitos reservados
           </p>
           <p className="desenvolvido_andy">
             {" "}

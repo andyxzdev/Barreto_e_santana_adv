@@ -80,20 +80,18 @@ function Sobre() {
                 <h1>Dra. Anna Clara Barreto</h1>
                 <li>
                   <h3>
-                    Pós-graduada em Direito Civil e Processo Civil, com atuação
-                    estratégica em Direito Empresarial, Civil e Contratual.
-                    Experiência na elaboração, revisão e gestão de contratos,
-                    análise de riscos e prevenção de demandas judiciais.
+                    Advogada e pós-graduanda em Direito Civil e Processo Civil,
+                    com atuação estratégica nas áreas Cível, Empresarial e
+                    Contratual. Conduzo cada caso com técnica, ética e foco em
+                    soluções jurídicas seguras e eficazes.
                   </h3>
                 </li>
                 <li>
                   <h3>
-                    Atuo na estruturação jurídica de operações empresariais,
-                    resolução de conflitos e orientação técnica para negócios
-                    que precisam de segurança, conformidade e tomada de decisão
-                    precisa. Trabalho com enfoque em eficiência, fundamentação
-                    sólida e soluções objetivas, garantindo suporte jurídico
-                    alinhado às necessidades práticas de cada caso.
+                    Atuo na elaboração e revisão de contratos, análise de riscos
+                    e orientação jurídica para pessoas e empresas. Meu trabalho
+                    é pautado em responsabilidade, precisão técnica e atenção às
+                    necessidades práticas de cada cliente.
                   </h3>
                 </li>
               </div>
@@ -115,16 +113,19 @@ function Sobre() {
                 <h1>Dra. Ludineia Santana</h1>
                 <li>
                   <h3>
-                    Especialista em Direito Trabalhista e Previdenciário, com
-                    atuação estratégica, ética e comprometida com resultados e
-                    segurança jurídica.
+                    Ludineia Santana é advogada, especialista em Direito
+                    Trabalhista e Direito Previdenciário. Pós-graduada em
+                    Direito Público e Processo Civil, atua com dedicação na
+                    defesa dos direitos de trabalhadores e segurados da
+                    Previdência Social.
                   </h3>
                 </li>
                 <li>
                   <h3>
-                    Advogada com atuação estratégica nas áreas de sua
-                    especialidade, conduzindo cada caso com técnica, ética e
-                    foco em resultados seguros.
+                    Sua atuação é pautada pela ética, responsabilidade e
+                    constante atualização profissional, buscando oferecer
+                    soluções jurídicas seguras e um atendimento transparente e
+                    comprometido com as necessidades de cada cliente.
                   </h3>
                 </li>
               </div>
