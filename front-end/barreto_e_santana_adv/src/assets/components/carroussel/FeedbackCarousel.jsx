@@ -16,7 +16,7 @@ const feedbacks = [
   {
     name: "Elaine Ambrósio",
     role: "Defesa em Execução",
-    text: "Estava prestes a perder meu imóvel em leilão. Com a atuação estratégica do escritório, obtivemos tutela de urgência suspendendo o leilão e a execução principal. Profissionalismo e segurança do início ao fim.",
+    text: "Tive um problema com minha operadora de telefone e, prontamente, vocês se disponibilizaram para me ajudar. Fui muito bem atendida, com atenção e profissionalismo durante todo o processo. Agradeço pelo suporte e pela dedicação em buscar a melhor solução para o meu caso.",
     avatar: Img2,
   },
   {
