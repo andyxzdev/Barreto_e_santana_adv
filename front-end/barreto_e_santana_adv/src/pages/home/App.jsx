@@ -122,9 +122,8 @@ function App() {
                 </h1>
 
                 <h2>
-                  Atuação estratégica em Direito do Trabalho com atendimento
-                  presencial em BH e 100% online para todo o território
-                  nacional.
+                  Advocacia estratégica para pessoas e empresas, com atendimento
+                  presencial em Belo Horizonte e atuação em todo o Brasil.
                 </h2>
                 <div className="icon_e_infos">
                   <img src={IconLocalizationYellow} alt="" />
