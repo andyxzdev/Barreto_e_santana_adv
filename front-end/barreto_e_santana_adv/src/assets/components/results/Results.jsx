@@ -60,7 +60,7 @@ export default function Results() {
 
       <div className="results-grid">
         <div className="result-item" data-aos-delay="200">
-          <Counter end={5} suffix="+" />
+          <Counter end={3} suffix="+" />
           <span>Anos de experiência</span>
         </div>
 

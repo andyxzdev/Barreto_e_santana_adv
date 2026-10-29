@@ -39,12 +39,24 @@ export default function FeedbackCarousel() {
 
   const total = feedbacks.length;
 
+  const getVisibleCount = () => {
+    const track = trackRef.current;
+    const card = track?.querySelector(".card");
+    if (!card) return 1;
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const viewportWidth = track.parentElement.getBoundingClientRect().width;
+    const cardWidth = card.getBoundingClientRect().width;
+    return Math.max(1, Math.floor((viewportWidth + gap) / (cardWidth + gap) + 0.01));
+  };
+
   const next = () => {
-    setIndex((prev) => prev + 1);
+    const step = getVisibleCount();
+    setIndex((prev) => prev + step);
   };
 
   const prev = () => {
-    setIndex((prev) => prev - 1);
+    const step = getVisibleCount();
+    setIndex((prev) => prev - step);
   };
 
   useEffect(() => {
