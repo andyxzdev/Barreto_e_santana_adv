@@ -167,20 +167,22 @@ footer {
         & .ButtonTopo {
           height: 1.4rem;
           width: 120px;
-          border-radius: 20px;
-          font-size: 13px;
+          border-radius: 999px;
+          font-family: "Inter", sans-serif;
+          font-size: 12px;
           margin-top: 10px;
           cursor: pointer;
           border: none;
-          background-color: #ffffff;
-          color: #111111;
+          background-color: #fff;
+          color: #1e1e1e;
           transition: all 0.5s;
 
           a {
-            color: #111111;
+            color: #1e1e1e;
+            font-family: "Inter", sans-serif;
           }
           a:hover {
-            color: #f4df8f;
+            color: #1e1e1e;
           }
 
           @include max($sm) {
@@ -189,10 +191,10 @@ footer {
           }
 
           &:hover {
-            border-radius: 0;
-            background-color: #111111;
-            border: solid 2px #f4df8f;
-            color: #f4df8f;
+            border-radius: 999px;
+            background-color: #f0f0f0;
+            border: none;
+            color: #1e1e1e;
           }
         }
       }

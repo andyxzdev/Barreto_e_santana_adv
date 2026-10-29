@@ -49,35 +49,38 @@ export default function FeedbackCarousel() {
 
   useEffect(() => {
     const track = trackRef.current;
-    const card = track.querySelector(".card");
-
+    const card = track?.querySelector(".card");
     if (!card) return;
 
-    const cardWidth = card.offsetWidth;
-    const gap = 30; // mesmo gap do CSS
-    const moveX = index * (cardWidth + gap);
+    const positionTrack = (slide, animate = true) => {
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const step = card.getBoundingClientRect().width + gap;
+      track.style.transition = animate ? "transform 0.6s ease" : "none";
+      track.style.transform = `translateX(${-Math.max(0, slide) * step}px)`;
+    };
 
-    track.style.transition = "transform 0.6s ease";
-    track.style.transform = `translateX(-${moveX}px)`;
+    positionTrack(index);
+    let observedWidth = track.parentElement.getBoundingClientRect().width;
+    const observer = new ResizeObserver(([entry]) => {
+      if (Math.abs(entry.contentRect.width - observedWidth) < 0.5) return;
+      observedWidth = entry.contentRect.width;
+      positionTrack(index, false);
+    });
+    observer.observe(track.parentElement);
 
-    if (index === total) {
-      setTimeout(() => {
-        track.style.transition = "none";
-        setIndex(0);
-        track.style.transform = `translateX(0)`;
+    let resetTimer;
+    if (index >= total || index < 0) {
+      resetTimer = setTimeout(() => {
+        const wrappedIndex = ((index % total) + total) % total;
+        positionTrack(wrappedIndex, false);
+        setIndex(wrappedIndex);
       }, 600);
     }
 
-    if (index < 0) {
-      const lastIndex = total - 1;
-      const lastMove = lastIndex * (cardWidth + gap);
-
-      setTimeout(() => {
-        track.style.transition = "none";
-        setIndex(lastIndex);
-        track.style.transform = `translateX(-${lastMove}px)`;
-      }, 600);
-    }
+    return () => {
+      observer.disconnect();
+      clearTimeout(resetTimer);
+    };
   }, [index, total]);
 
   return (

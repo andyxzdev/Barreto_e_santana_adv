@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import Logo from "../../logo/Logo2.png";
+import Logo from "../../logo/logonova2.png";
 import { Link } from "react-router-dom";
 
 const HeaderPoli = ({ customStyle }) => {
@@ -11,9 +11,9 @@ const HeaderPoli = ({ customStyle }) => {
   };
 
   return (
-    <header>
+    <header className="home-header">
       <div className="Logo" style={customStyle}>
-        <img src={Logo} alt="logoTopo" />
+        <img src={Logo} alt="Anna Clara, Advogada Trabalhista" />
       </div>
 
       <button

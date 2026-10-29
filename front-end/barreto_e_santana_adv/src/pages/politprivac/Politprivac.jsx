@@ -34,7 +34,7 @@ function Politprivac() {
             </div>
             <div className="contato2">
               <img src={IconMail} alt="" />
-              <p>contato@barretoesantana.adv.br</p>
+              <p>annaclarabarretoadv@gmail.com</p>
             </div>
           </div>
         </div>

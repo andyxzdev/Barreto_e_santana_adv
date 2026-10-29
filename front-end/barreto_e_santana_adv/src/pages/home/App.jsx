@@ -3,14 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.scss";
 
-import IconPhone from "../../assets/icons/phone.svg";
-import IconMail from "../../assets/icons/mail.svg";
 import IconeDirCivil from "../../assets/icons/civil.svg";
 import IconeFamily from "../../assets/icons/family.svg";
 import IconeShield from "../../assets/icons/shield.svg";
 import IconeCart from "../../assets/icons/cart.svg";
 import IconeCash from "../../assets/icons/cash.svg";
-import LogoPequena from "../../assets/icons/logo.png";
+import LogoPequena from "../../assets/logo/logonova2.png";
 import IconWorld from "../../assets/icons/world.svg";
 import IconBusiness2 from "../../assets/icons/business2.svg";
 import IconBusiness from "../../assets/icons/business.svg";
@@ -18,9 +16,9 @@ import IconLocalizationYellow from "../../assets/icons/localization2.svg";
 import IconPerson from "../../assets/icons/person.svg";
 import Arrow from "../../assets/icons/arrow.svg";
 
-import ImgAtendimento from "../../assets/arts/art3.png";
-import ImgAreas from "../../assets/arts/art_areas_atuacao.png";
-import BannerBaixo from "../../assets/banners/art3.png";
+import ImgAtendimento from "../../assets/arts/anna-clara-atendimento.png";
+import ImgAreas from "../../assets/arts/nova1.jpg";
+import BannerBaixo from "../../assets/banners/anna-clara-banner.png";
 
 import Header from "../../assets/components/header/Header.jsx";
 import "../../assets/components/header/Header.scss";
@@ -48,28 +46,19 @@ function App() {
   return (
     <>
       <main>
-        <div className="Contatos-topo">
-          <div className="infos">
-            <div className="contato1">
-              <img src={IconPhone} alt="" />
-              <p>(31) 7205-7198</p>
-            </div>
-            <div className="contato2">
-              <img src={IconMail} alt="" />
-              <p>contato@barretoesantana.adv.br</p>
-            </div>
-          </div>
+        <div className="home-contact-bar">
+          <p>Atendimento em Belo Horizonte e em todo o Brasil</p>
+          <a href="mailto:annaclarabarretoadv@gmail.com">annaclarabarretoadv@gmail.com</a>
         </div>
         <Header />
         <section className="Topo-inicio">
           <div className="infos-topo" id="topo">
-            <h1>
-              Defendendo seus direitos com ética, estratégia e compromisso.
-            </h1>
+            <h1>Advocacia Trabalhista com Estratégia e Clareza</h1>
             <h3>
-              Atuamos com seriedade e proximidade em Belo Horizonte e em todo o
-              Brasil, oferecendo soluções jurídicas claras, humanas e eficazes
-              para cada cliente.
+              Defesa técnica e atendimento personalizado para proteger seus direitos trabalhistas com estratégia, segurança e responsabilidade.
+            </h3>
+            <h3>
+              Com sede em Belo Horizonte e atendimento em todo o Brasil, cada caso recebe análise individual e orientação clara, da avaliação inicial às medidas jurídicas cabíveis.
             </h3>
             {/* <button
               className="Button_hero"
@@ -89,7 +78,7 @@ function App() {
           <div className="infoss">
             <img
               src={LogoPequena}
-              alt=""
+              alt="Anna Clara, Advogada Trabalhista"
               className="Logo_pequena"
               data-aos="fade-up"
             />
@@ -187,7 +176,7 @@ function App() {
                 <h1>Áreas de Atuação</h1>
                 <h3>
                   Atuamos de forma estratégica nas principais áreas do Direito,
-                  <br></br>sempre com foco em soluções claras e eficientes.
+                  sempre com foco em soluções claras e eficientes.
                 </h3>
               </div>
 
@@ -310,11 +299,6 @@ function App() {
           <img
             src={BannerBaixo}
             alt=""
-            style={{
-              width: "100%",
-              paddingLeft: "120px",
-              paddingRight: "120px",
-            }}
             className="banner-img"
           />
         </section>

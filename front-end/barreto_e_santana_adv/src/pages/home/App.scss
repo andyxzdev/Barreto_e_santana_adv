@@ -1,116 +1,54 @@
 @use "../../styles/breakpoints" as *;
 
-.Contatos-topo {
-  width: 100%;
-  height: 7vh;
+.home-contact-bar {
   display: flex;
-  background-color: #1f1f1f;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 32px;
+  background: #f7f7f7;
 
-  @include between($xxs, $xs) {
-    height: 12vh;
+  p, a {
+    color: #766f69;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
   }
 
-  & .infos {
-    width: 100%;
-    display: flex;
-    gap: 50px;
-
-    @include between($xl, $xxl) {
-      gap: 30px;
-    }
-
-    @include between($xxs, $xs) {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 25px 70px;
-      text-align: center;
-    }
-
-    & .contato1 {
-      display: flex;
-      align-items: center;
-      margin-left: 40px;
-
-      @include between($xxs, $xs) {
-        margin-left: 0px;
-      }
-
-      & img {
-        width: 1.2vw;
-
-        @include between($xxs, $xs) {
-          width: 5vw;
-        }
-      }
-
-      & p {
-        width: 100%;
-        font-size: 1.2rem;
-        color: #fff;
-        margin-left: 10px;
-
-        @include between($md, $lg) {
-          font-size: 1rem;
-        }
-
-        @include between($xxs, $xs) {
-          font-size: 1rem;
-        }
-      }
-    }
-
-    & .contato2 {
-      display: flex;
-      align-items: center;
-
-      & img {
-        width: 1.2vw;
-
-        @include between($xxs, $xs) {
-          width: 4vw;
-        }
-      }
-
-      & p {
-        width: 100%;
-        font-size: 1.2rem;
-        color: #fff;
-        margin-left: 10px;
-
-        @include between($md, $lg) {
-          font-size: 1rem;
-        }
-
-        @include between($xxs, $xs) {
-          font-size: 1rem;
-        }
-      }
-    }
+  @include max($sm) {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 16px;
+    text-align: center;
   }
 }
 
 .Topo-inicio {
+  display: flow-root;
   width: 100%;
-  height: 70vh;
+  min-height: 70vh;
+  height: auto;
   background-image: url("../../assets/banners/Banner-topo.jpg");
   background-position: center;
   background-size: cover;
 
   @include between($md, $lg) {
-    height: 85vh;
+    min-height: 85vh;
   }
 
-  @include between($xs, $sm) {
-    background-image: url("../../assets/banners/Banner-topo2.jpg");
+  @include max($sm) {
+    background-image: url("../../assets/banners/anna-clara-home-mobile.png");
+    background-color: #fff;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 
-    height: 80vh;
+    min-height: 80vh;
   }
 
-  @include between($xxs, $xs) {
-    background-image: url("../../assets/banners/Banner-topo2.jpg");
+  @include max($xs) {
+    background-image: url("../../assets/banners/anna-clara-home-mobile.png");
+    background-size: cover;
 
-    height: 68vh;
+    min-height: 68vh;
   }
 
   & .infos-topo {
@@ -120,70 +58,89 @@
     text-align: left;
     width: 66%;
     gap: 40px;
-    padding: 15vh 120px 0;
+    padding: 15vh 120px 5vh;
 
     @include between($md, $lg) {
       margin-top: -10px;
       margin-left: 20px;
     }
 
-    @include between($xs, $sm) {
+    @include max($sm) {
       text-align: center;
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 0;
+      padding: 0 0 5vh;
     }
 
-    @include between($xxs, $xs) {
+    @include max($xs) {
       text-align: center;
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding: 0;
+      padding: 0 0 5vh;
     }
 
     & h1 {
-      color: #f4df8f;
+      color: #a98c58;
       font-weight: 400;
       font-size: 4rem;
 
+      @include min($md) {
+        font-size: 3.6rem;
+      }
+
       @include between($xl, $xxl) {
-        font-size: 3rem;
+        font-size: 2.7rem;
       }
 
       @include between($md, $lg) {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
 
-      @include between($xs, $sm) {
+      @include max($sm) {
         font-size: 2.5rem;
         margin-top: 38vh;
       }
 
-      @include between($xxs, $xs) {
+      @include max($xs) {
         font-size: 1.9rem;
         margin-top: 30vh;
       }
     }
 
     & h3 {
-      color: #fff;
+      color: #000;
       font-size: 1.4rem;
-      font-weight: 400;
+      font-weight: 300;
       width: 70%;
 
+      @include min($md) {
+        font-size: 1.26rem;
+      }
+
       @include between($md, $lg) {
+        font-size: 0.9rem;
+      }
+
+      @include max($sm) {
         font-size: 1rem;
       }
 
-      @include between($xs, $sm) {
-        font-size: 1rem;
-      }
-
-      @include between($xxs, $xs) {
+      @include max($xs) {
         font-size: 0.8rem;
         width: 90%;
+      }
+    }
+
+    > .button {
+      @include max($sm) {
+        width: 50vw;
+        height: 35px;
+      }
+
+      @include max($xs) {
+        width: 70vw;
       }
     }
 
@@ -204,12 +161,12 @@
         font-size: 1rem;
       }
 
-      @include between($xs, $sm) {
+      @include max($sm) {
         width: 50vw;
         height: 35px;
       }
 
-      @include between($xxs, $xs) {
+      @include max($xs) {
         width: 70vw;
         height: 35px;
         font-size: 1rem;
@@ -260,15 +217,15 @@
     }
 
     .Logo_pequena {
-      width: 2.5vw;
+      width: 3.125vw;
       margin-top: 1vh;
 
       @include between($xs, $sm) {
-        width: 7vw;
+        width: 8.75vw;
       }
 
       @include between($xxs, $xs) {
-        width: 10vw;
+        width: 12.5vw;
       }
     }
 

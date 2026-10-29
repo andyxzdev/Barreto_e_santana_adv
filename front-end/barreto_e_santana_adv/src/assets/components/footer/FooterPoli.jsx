@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 import { Link } from "react-router-dom";
 
-import Logo from "../../logo/Logo1.png";
+import Logo from "../../logo/logonova2.png";
 
 import IconeDireitoCivil from "../../icons/civil2.svg";
 import IconeDireitoTrabalhista from "../../icons/business.svg";
@@ -23,10 +23,10 @@ const FooterPoli = ({ customStyle }) => {
     <footer>
       <div className="infos_cima">
         <div className="Coluna_esq">
-          <img src={Logo} alt="Logo Barreto & Santana" />
+          <img src={Logo} alt="Logo Anna Clara, Advogada Trabalhista" />
           <li>
             <a
-              href="https://www.instagram.com/barretoesantanaadv/"
+              href="https://www.instagram.com/advannacbarreto/"
               target="_blank"
             >
               <img src={IconeInsta} alt="Instagram" />
@@ -55,7 +55,7 @@ const FooterPoli = ({ customStyle }) => {
               </ul>
               <ul>
                 <img src={IconeEmail} alt="Email" />
-                <p>contato@barretoesantana.adv.br</p>
+                <p>annaclarabarretoadv@gmail.com</p>
               </ul>
             </li>
 
@@ -133,7 +133,7 @@ const FooterPoli = ({ customStyle }) => {
           </p>
           <p className="direitos_reservados_texto">
             {" "}
-            © 2026 Barreto & Santana Advocacia | todos os direitos reservados
+            © 2026 Anna Clara, Advogada Trabalhista | todos os direitos reservados
           </p>
           <p className="desenvolvido_andy">
             {" "}
