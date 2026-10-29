@@ -95,6 +95,7 @@ header, header.home-header {
 }
 
 .Muito_alem {
+  display: none;
   padding: var(--section-space) var(--page-gutter);
   .infoss {
     width: min(100%, 60rem);
@@ -140,6 +141,7 @@ header, header.home-header {
 }
 
 .Areass, .Areas { padding: var(--section-space) var(--page-gutter); }
+#resultados + .Areass { padding-top: clamp(3rem, 4.5vw, 4.5rem); }
 .Areass .infos, .Areas .infos {
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
@@ -193,7 +195,7 @@ header, header.home-header {
   h1 { font-size: clamp(2rem, 4vw, 3.7rem); line-height: 1.15; margin: 0; }
   p { font-size: clamp(1rem, 1.6vw, 1.4rem); margin-top: 1.5rem; }
 }
-.results-grid { flex-wrap: wrap; flex-direction: row; gap: clamp(1.5rem, 8vw, 8rem); margin-top: 3rem; }
+.results-grid { flex-wrap: wrap; flex-direction: row; gap: clamp(1.5rem, 8vw, 8rem); margin-top: 1.5rem; }
 .result-item { flex: 0 1 18rem; font-size: clamp(1rem, 1.6vw, 1.6rem); }
 .result-number { font-size: clamp(3rem, 6vw, 5.5rem); }
 
@@ -207,18 +209,18 @@ header, header.home-header {
   display: grid;
   grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
   gap: clamp(.5rem, 2vw, 2rem);
-  max-width: 64rem;
-  margin: 3rem auto 0;
+  max-width: 80rem;
+  margin: 1.5rem auto 0;
   .nav { width: 2.75rem; height: 2.75rem; font-size: 2rem; }
   .viewport {
     width: 100%;
     min-width: 0;
     margin: 0;
-    .track { gap: 30px; align-items: stretch; }
+    .track { gap: 30px; align-items: flex-start; }
   }
   .card {
-    flex: 0 0 100%;
-    width: 100%;
+    flex: 0 0 calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
     height: auto;
     margin: 0;
     padding: clamp(1rem, 3vw, 2.5rem);
@@ -272,7 +274,7 @@ header, header.home-header {
   padding: var(--section-space) var(--page-gutter);
   .Titulo h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.15; }
   .infos {
-    margin: 3rem auto 0;
+    margin: 1.5rem auto 0;
     max-width: var(--content-width);
     .adv1 {
       display: grid;
@@ -298,7 +300,7 @@ header, header.home-header {
       gap: 1.5rem;
       width: 100%;
       align-items: stretch;
-      margin: 3rem 0;
+      margin: 1.5rem 0;
       padding: 0;
       .quadrado {
         width: 100%;
@@ -433,14 +435,30 @@ footer {
   .Banner-baixo .banner-img { display: none; }
   .results-grid { gap: 2rem; }
   .results-grid .divider { display: none; }
+  .carousel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .viewport { grid-column: 1 / -1; grid-row: 1; }
+    .viewport .track { gap: 16px; }
+    .prev { grid-column: 1; grid-row: 2; justify-self: end; }
+    .next { grid-column: 2; grid-row: 2; justify-self: start; }
+    .card { flex-basis: 80%; width: 80%; }
+  }
 }
 @media (max-width: 480px) {
   .home-contact-bar { gap: .25rem; }
   .Areass .infos .textoss .textos-areas .coluna,
   .Areas .infos .textos .textos_areas .coluna { grid-template-columns: minmax(0, 1fr); }
   .carousel {
-    grid-template-columns: 2.5rem minmax(0, 1fr) 2.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     .nav { width: 2.5rem; height: 2.5rem; }
     .card { .header { flex-direction: column; div { text-align: center; } } }
   }
 }
+
+// Compact spacing only on Home and Sobre; privacy and footer styles stay unchanged.
+.Topo-inicio ~ section,
+.Topo-sobre ~ section {
+  --section-space: clamp(.75rem, 1.25vw, 1.25rem);
+}
+.Topo-inicio .infos-topo,
+.Topo-sobre .infos-topo { padding-bottom: 1rem; }
