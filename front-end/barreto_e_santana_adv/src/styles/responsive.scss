@@ -110,6 +110,7 @@ header, header.home-header {
 .Atendimento {
   margin: 0;
   padding: var(--section-space) var(--page-gutter);
+  padding-top: clamp(5rem, 9vw, 9rem);
   .infos {
     max-width: var(--content-width);
     margin: 0 auto;
