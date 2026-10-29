@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import Logo from "../../logo/Logo2.png";
+import Logo from "../../logo/logonova2.png";
 import { Link } from "react-router-dom";
 
 const Header = ({ customStyle }) => {
@@ -11,9 +11,9 @@ const Header = ({ customStyle }) => {
   };
 
   return (
-    <header>
+    <header className="home-header">
       <div className="Logo" style={customStyle}>
-        <img src={Logo} alt="logoTopo" />
+        <img src={Logo} alt="Anna Clara, Advogada Trabalhista" />
       </div>
 
       <button
@@ -71,7 +71,7 @@ const Header = ({ customStyle }) => {
               window.open("https://wa.me/553172057198", "_blank");
             }}
           >
-            Contato
+            Agende seu atendimento
           </button>
         </ul>
       </nav>

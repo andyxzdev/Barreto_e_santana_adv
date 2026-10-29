@@ -1,0 +1,446 @@
+// Fluid layout rules shared by the existing pages; colors and assets stay in their original styles.
+:root {
+  --page-gutter: clamp(1rem, 5vw, 7.5rem);
+  --section-space: clamp(3rem, 7vw, 7.5rem);
+  --layout-gap: clamp(1.5rem, 3vw, 3rem);
+  --content-width: 90rem;
+}
+
+main :where(section, div, form, nav, ul, li) { min-width: 0; }
+main img { max-width: 100%; height: auto; }
+main :where(h1, h2, h3, p, a, strong, span) {
+  overflow-wrap: anywhere;
+}
+main :where(h1, h2, h3) { text-wrap: balance; }
+main :where(p, h3) { line-height: 1.6; }
+main :where(section[id], div[id]) { scroll-margin-top: 1rem; }
+
+.home-contact-bar {
+  flex-wrap: wrap;
+  padding-inline: var(--page-gutter);
+  p, a { line-height: 1.5; }
+}
+.Contatos-topo {
+  height: auto;
+  min-height: 2.5rem;
+  padding: .75rem var(--page-gutter);
+  .infos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem 1.5rem;
+    padding: 0;
+    .contato1, .contato2 {
+      margin: 0;
+      gap: .5rem;
+      img { width: 1rem; flex-shrink: 0; }
+      p { margin: 0; width: auto; font-size: .875rem; }
+    }
+  }
+}
+
+header, header.home-header {
+  height: auto;
+  min-height: 6rem;
+  gap: 1.5rem;
+  padding: .5rem clamp(1rem, 2vw, 2rem);
+  .Logo { min-width: 0; flex-shrink: 0; }
+  .Logo img {
+    width: clamp(9rem, 14vw, 12.5rem);
+    height: auto;
+    max-height: 6.25rem;
+    object-fit: contain;
+  }
+  nav { flex: 1; min-width: 0; }
+  nav ul { gap: clamp(.5rem, 1vw, 1rem); }
+  nav ul li a { font-size: 1rem; }
+  nav ul .ButtonTopo { max-width: 100%; height: auto; min-height: 3rem; padding: .75rem 1rem; }
+}
+
+.button {
+  width: min(100%, 19rem);
+  height: auto;
+  min-height: 3rem;
+  a { display: flex; align-items: center; justify-content: center; min-height: inherit; padding: .75rem 1.25rem; }
+}
+.Topo-inicio, .Topo-sobre {
+  min-height: 0;
+  height: auto;
+  padding-bottom: 0;
+  .infos-topo {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: clamp(3rem, 7vw, 7rem) var(--page-gutter);
+    gap: clamp(1.25rem, 2.5vw, 2.5rem);
+    align-items: flex-start;
+    h1 {
+      width: min(58%, 42rem);
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.15;
+      margin: 0;
+    }
+    h3 {
+      width: min(54%, 36rem);
+      font-size: clamp(.95rem, 1.4vw, 1.26rem);
+      margin: 0;
+    }
+    > .button { width: min(100%, 19rem); height: auto; }
+  }
+}
+
+.Topo-inicio .infos-topo {
+  padding-block: clamp(2.5rem, 4.5vw, 5rem);
+  gap: clamp(1.25rem, 2vw, 2rem);
+}
+
+.Muito_alem {
+  padding: var(--section-space) var(--page-gutter);
+  .infoss {
+    width: min(100%, 60rem);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    .Logo_pequena { width: clamp(3rem, 4vw, 4.5rem); margin-top: 0; }
+    h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin-top: 1.5rem; }
+    h3 { font-size: clamp(.95rem, 1.4vw, 1.2rem); margin-top: 1.5rem; }
+    .Arrow { width: clamp(1.25rem, 2vw, 2rem); margin-top: 2rem; }
+  }
+}
+.Atendimento {
+  margin: 0;
+  padding: var(--section-space) var(--page-gutter);
+  .infos {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0;
+    .texto_e_imagem {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: var(--layout-gap);
+      margin: 0;
+      > img { width: 100%; }
+      .texto {
+        width: 100%;
+        h1 { width: 100%; font-size: clamp(1.8rem, 3.3vw, 3rem); line-height: 1.2; margin-bottom: 1.5rem; }
+        h2 { font-size: clamp(1rem, 1.7vw, 1.5rem); line-height: 1.5; margin-bottom: 2rem; }
+        .icon_e_infos {
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 1rem;
+          margin-bottom: 1.5rem;
+          img { width: 1.5rem; flex-shrink: 0; }
+        }
+        li {
+          padding: 0;
+          h3, p { margin-left: 0; font-size: clamp(.95rem, 1.4vw, 1.2rem); }
+        }
+      }
+    }
+  }
+}
+
+.Areass, .Areas { padding: var(--section-space) var(--page-gutter); }
+.Areass .infos, .Areas .infos {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
+  gap: var(--layout-gap);
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0;
+}
+.Areass .infos > .Img-art, .Areas .infos > img { width: 100%; margin: 0; border-radius: 24px; }
+.Areass .infos .textoss, .Areas .infos .textos {
+  width: 100%;
+  padding: 0;
+  .titulo {
+    padding: 0;
+    h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin: 0; width: 100%; }
+    h3 { font-size: clamp(.95rem, 1.4vw, 1.3rem); margin-top: 1.5rem; }
+  }
+}
+.Areass .infos .textoss .textos-areas, .Areas .infos .textos .textos_areas {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0;
+  margin-top: 2rem;
+  .coluna {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding: 0;
+    align-items: stretch;
+  }
+  .area1 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: clamp(1rem, 1.5vw, 1.5rem);
+    h1 { font-size: clamp(1.2rem, 1.6vw, 1.6rem); margin-top: .75rem; }
+    li { margin-top: 1rem; p { font-size: clamp(.9rem, 1.1vw, 1.1rem); } }
+    img { width: 1.5rem; }
+    .motivo-numero { font-size: clamp(2.5rem, 4vw, 4rem); }
+  }
+}
+
+.results {
+  padding: var(--section-space) var(--page-gutter);
+  margin-top: 0;
+  border-top-left-radius: clamp(2.5rem, 8vw, 7.5rem);
+  border-top-right-radius: clamp(2.5rem, 8vw, 7.5rem);
+  h1 { font-size: clamp(2rem, 4vw, 3.7rem); line-height: 1.15; margin: 0; }
+  p { font-size: clamp(1rem, 1.6vw, 1.4rem); margin-top: 1.5rem; }
+}
+.results-grid { flex-wrap: wrap; flex-direction: row; gap: clamp(1.5rem, 8vw, 8rem); margin-top: 3rem; }
+.result-item { flex: 0 1 18rem; font-size: clamp(1rem, 1.6vw, 1.6rem); }
+.result-number { font-size: clamp(3rem, 6vw, 5.5rem); }
+
+.feedback-section {
+  padding: var(--section-space) var(--page-gutter);
+  border-bottom-left-radius: clamp(2.5rem, 8vw, 7.5rem);
+  border-bottom-right-radius: clamp(2.5rem, 8vw, 7.5rem);
+  h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin-top: 0; }
+}
+.carousel {
+  display: grid;
+  grid-template-columns: 2.75rem minmax(0, 1fr) 2.75rem;
+  gap: clamp(.5rem, 2vw, 2rem);
+  max-width: 64rem;
+  margin: 3rem auto 0;
+  .nav { width: 2.75rem; height: 2.75rem; font-size: 2rem; }
+  .viewport {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    .track { gap: 30px; align-items: stretch; }
+  }
+  .card {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: clamp(1rem, 3vw, 2.5rem);
+    .header {
+      padding-left: 0;
+      flex-wrap: wrap;
+      img { width: 3.75rem; height: 3.75rem; flex-shrink: 0; }
+    }
+    p { width: 100%; max-width: 100%; font-size: clamp(.9rem, 1.2vw, 1rem); }
+  }
+}
+.Banner-baixo .banner-img { display: block; width: 100%; height: auto; padding: 0 var(--page-gutter); }
+
+.Formulario {
+  padding: var(--section-space) var(--page-gutter);
+  margin: 0;
+  .infoss {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--layout-gap);
+    align-items: start;
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0;
+    .textos {
+      h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; }
+      li {
+        h2 { font-size: clamp(1.1rem, 1.6vw, 1.5rem); line-height: 1.5; }
+        h3 { width: 100%; font-size: clamp(1rem, 1.4vw, 1.3rem); }
+      }
+    }
+  }
+}
+.formularioDiv {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  h1 { font-size: clamp(2rem, 3vw, 3rem); line-height: 1.15; margin-bottom: 1.5rem; }
+  form {
+    input { min-width: 0; height: auto; min-height: 2.75rem; font-size: 1rem; padding: .75rem; }
+    textarea { min-width: 0; min-height: 9rem; font-size: 1rem; padding: .75rem; resize: vertical; }
+    input::placeholder, textarea::placeholder { font-size: 1rem; }
+    button { width: 100%; min-height: 3rem; height: auto; padding: .75rem 1rem; }
+  }
+}
+
+.Sobre {
+  margin-top: 0;
+  padding: var(--section-space) var(--page-gutter);
+  .Titulo h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.15; }
+  .infos {
+    margin: 3rem auto 0;
+    max-width: var(--content-width);
+    .adv1 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: var(--layout-gap);
+      padding: 0;
+      .Img_dra1 { width: 100%; }
+      h1 { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+      li { margin: 1.5rem 0; h3 { font-size: clamp(1rem, 1.5vw, 1.3rem); } }
+    }
+  }
+}
+.Como-trabalhamos {
+  height: auto;
+  padding: var(--section-space) var(--page-gutter);
+  .infos {
+    width: 100%;
+    max-width: var(--content-width);
+    h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; }
+    .quadrados-espaco {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      align-items: stretch;
+      margin: 3rem 0;
+      padding: 0;
+      .quadrado {
+        width: 100%;
+        height: auto;
+        gap: 1.5rem;
+        padding: 2rem 1.25rem;
+        img { width: clamp(2.5rem, 4vw, 3.75rem); }
+        h3 { font-size: clamp(1.3rem, 1.8vw, 1.7rem); }
+        p { font-size: 1rem; }
+      }
+    }
+  }
+}
+.Topo-politic {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: var(--section-space) var(--page-gutter);
+  h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; }
+  h3 { margin-top: 2rem; font-size: clamp(1rem, 1.4vw, 1.2rem); }
+}
+
+footer {
+  .infos_cima {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+    max-width: var(--content-width);
+    padding: var(--section-space) var(--page-gutter);
+    .Coluna_esq {
+      align-items: center;
+      > img { width: min(100%, 22rem); height: auto; }
+      li { width: 100%; gap: 2rem; justify-content: center; }
+    }
+    .Coluna_meio, .Coluna_dir { padding-left: 0; }
+    .Coluna_meio .Fale_conosco_footer, .Coluna_meio .Areas_atuacao_footer,
+    .Coluna_dir .Localizacao_footer, .Coluna_dir .Links_rapidos_footer {
+      h1 { font-size: clamp(1.5rem, 2vw, 2rem); }
+    }
+    .Coluna_meio .Fale_conosco_footer .ButtonTopo { height: auto; min-height: 2.75rem; width: min(100%, 14rem); padding: .75rem 1rem; }
+    .Coluna_meio .Fale_conosco_footer li ul, .Coluna_meio .Areas_atuacao_footer li ul,
+    .Coluna_dir .Localizacao_footer li {
+      align-items: flex-start;
+      img { width: 1.125rem; flex-shrink: 0; }
+      p { font-size: 1rem; }
+    }
+    .Coluna_dir .Links_rapidos_footer nav {
+      display: flex;
+      position: static;
+      width: 100%;
+      ul li a { font-size: 1rem; }
+    }
+  }
+  .infos_baixo { padding: 2rem var(--page-gutter); }
+}
+
+@media (max-width: 1120px) {
+  header, header.home-header {
+    nav { flex: none; }
+    nav.open { max-height: calc(100dvh - 10rem); overflow-y: auto; }
+  }
+}
+@media (min-width: 821px) and (max-width: 1120px) {
+  header:not(.home-header) {
+    .hamburger { display: flex; }
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem;
+      background: #111;
+      z-index: 1099;
+      &.open { display: flex; }
+      ul { flex-direction: column; gap: 1rem; }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .Atendimento .infos .texto_e_imagem,
+  .Areass .infos, .Areas .infos, .Formulario .infoss, .Sobre .infos .adv1 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .Atendimento .infos .texto_e_imagem > img,
+  .Areass .infos > .Img-art, .Areas .infos > img, .Sobre .infos .adv1 .Img_dra1 {
+    width: min(100%, 34rem);
+    justify-self: center;
+  }
+  .Atendimento .infos .texto_e_imagem .texto h1 { text-align: center; }
+}
+@media (max-width: 820px) {
+  header:not(.home-header) nav { position: absolute; top: 100%; }
+  .Topo-inicio, .Topo-sobre {
+    background-image: none;
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: clamp(15rem, 72vw, 36rem);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100% auto;
+    }
+    .infos-topo {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem var(--page-gutter) 3rem;
+      h1, h3 { width: 100%; max-width: 42rem; margin: 0; }
+      h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); }
+      h3 { font-size: clamp(.95rem, 2vw, 1.1rem); }
+    }
+  }
+  .Topo-inicio {
+    background-color: #fff;
+    &::before {
+      height: clamp(13.5rem, 64vw, 32rem);
+      background-image: url("../assets/banners/anna-clara-home-mobile.png");
+      background-size: 90% auto;
+      mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+    }
+  }
+  .Topo-sobre {
+    background-color: #111;
+    &::before {
+      height: clamp(18rem, 85vw, 42rem);
+      background-image: url("../assets/banners/anna-clara-sobre-mobile.png");
+      background-size: cover;
+    }
+  }
+  .Banner-baixo .banner-img { display: none; }
+  .results-grid { gap: 2rem; }
+  .results-grid .divider { display: none; }
+}
+@media (max-width: 480px) {
+  .home-contact-bar { gap: .25rem; }
+  .Areass .infos .textoss .textos-areas .coluna,
+  .Areas .infos .textos .textos_areas .coluna { grid-template-columns: minmax(0, 1fr); }
+  .carousel {
+    grid-template-columns: 2.5rem minmax(0, 1fr) 2.5rem;
+    .nav { width: 2.5rem; height: 2.5rem; }
+    .card { .header { flex-direction: column; div { text-align: center; } } }
+  }
+}

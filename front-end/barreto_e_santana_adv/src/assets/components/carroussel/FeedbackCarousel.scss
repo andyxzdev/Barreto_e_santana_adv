@@ -58,9 +58,9 @@
   }
 
   .nav {
-    background: none;
-    border: 2px solid #f4df8f;
-    color: #f4df8f;
+    background: #1e1e1e;
+    border: 2px solid transparent;
+    color: #fff;
     font-size: 2.5rem;
     width: 55px;
     height: 55px;
@@ -75,8 +75,8 @@
     }
 
     &:hover {
-      background-color: #f4df8f;
-      color: #1f1f1f;
+      background-color: #333;
+      color: #fff;
     }
   }
 

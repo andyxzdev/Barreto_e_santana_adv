@@ -7,12 +7,9 @@ import IconSearch from "../../assets/icons/search.svg";
 import IconPapper from "../../assets/icons/papper.svg";
 import IconDirCivil from "../../assets/icons/civil.svg";
 import IconHands from "../../assets/icons/hands.svg";
-import IconPhone from "../../assets/icons/phone.svg";
-import IconMail from "../../assets/icons/mail.svg";
 
 import ImgDra1 from "../../assets/arts/art1.png";
-import ImgDra2 from "../../assets/arts/art2.png";
-import ImgMotivos from "../../assets/arts/art_motivos.png";
+import ImgMotivos from "../../assets/arts/nova2.jpg";
 
 import HeaderSobre from "../../assets/components/header/HeaderSobre.jsx";
 import "../../assets/components/header/Header.scss";
@@ -34,19 +31,9 @@ function Sobre() {
   return (
     <>
       <main>
-        <div className="Contatos-topo">
-          <div className="infos">
-            <div className="contato1">
-              <img src={IconPhone} alt="" />
-              <p>
-                <p>(31) 7205-7198</p>
-              </p>
-            </div>
-            <div className="contato2">
-              <img src={IconMail} alt="" />
-              <p>contato@barretoesantana.adv.br</p>
-            </div>
-          </div>
+        <div className="home-contact-bar">
+          <p>Atendimento em Belo Horizonte e em todo o Brasil</p>
+          <a href="mailto:annaclarabarretoadv@gmail.com">annaclarabarretoadv@gmail.com</a>
         </div>
         <HeaderSobre />
         <section className="Topo-sobre" id="topo">
@@ -70,7 +57,7 @@ function Sobre() {
         <section className="Sobre" id="associados">
           <div className="Titulo">
             <h1 data-aos="fade-up">
-              Quem está por trás<br></br>da Barreto & Santana
+              Conheça Anna Clara, Advogada Trabalhista
             </h1>
           </div>
 
@@ -102,34 +89,6 @@ function Sobre() {
                 data-aos="fade-right"
               />
             </div>
-            <div className="adv2">
-              <img
-                src={ImgDra2}
-                alt=""
-                className="Img_dra2"
-                data-aos="fade-right"
-              />
-              <div className="texto" data-aos="fade-left">
-                <h1>Dra. Ludineia Santana</h1>
-                <li>
-                  <h3>
-                    Ludineia Santana é advogada, especialista em Direito
-                    Trabalhista e Direito Previdenciário. Pós-graduada em
-                    Direito Público e Processo Civil, atua com dedicação na
-                    defesa dos direitos de trabalhadores e segurados da
-                    Previdência Social.
-                  </h3>
-                </li>
-                <li>
-                  <h3>
-                    Sua atuação é pautada pela ética, responsabilidade e
-                    constante atualização profissional, buscando oferecer
-                    soluções jurídicas seguras e um atendimento transparente e
-                    comprometido com as necessidades de cada cliente.
-                  </h3>
-                </li>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -139,40 +98,39 @@ function Sobre() {
             <div className="textos">
               <div className="titulo">
                 <h1>
-                  6 motivos do porquê escolher a Barreto & Santana Advogados
+                  6 motivos para nos escolher
                 </h1>
               </div>
 
               <div className="textos_areas">
                 <div className="coluna">
                   <div className="area1">
-                    <h1 className="motivo-numero">1</h1>
-                    <h1>Experiência Comprovada</h1>
+                    <h1 className="motivo-numero">01</h1>
+                    <h1>Atendimento individual</h1>
                     <li>
                       <p>
-                        Atuação em diversas áreas do Direito com estratégia e
-                        precisão. Soluções práticas, redução de riscos e clareza
-                        em cada etapa.
+                        Cada demanda recebe atenção conforme a situação e as
+                        necessidades apresentadas.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <h1 className="motivo-numero">2</h1>
-                    <h1>Atendimento Personalizado</h1>
+                    <h1 className="motivo-numero">02</h1>
+                    <h1>Escuta atenta</h1>
                     <li>
                       <p>
-                        Cada caso é tratado de forma individualizada, com
-                        estratégia específica para cada cliente.
+                        Busco compreender o contexto, as dúvidas e o que é
+                        importante para você.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <h1 className="motivo-numero">3</h1>
-                    <h1>Comprometimento com a Ética</h1>
+                    <h1 className="motivo-numero">03</h1>
+                    <h1>Análise cuidadosa</h1>
                     <li>
                       <p>
-                        Transparência, responsabilidade e respeito em todas as
-                        etapas do atendimento.
+                        Fatos e documentos são avaliados com atenção e
+                        responsabilidade.
                       </p>
                     </li>
                     <li></li>
@@ -180,33 +138,31 @@ function Sobre() {
                 </div>
                 <div className="coluna">
                   <div className="area1">
-                    <h1 className="motivo-numero">4</h1>
-                    <h1>Estratégia Jurídica Inteligente</h1>
+                    <h1 className="motivo-numero">04</h1>
+                    <h1>Estratégia adequada</h1>
                     <li>
                       <p>
-                        Definimos estratégias técnicas após análise detalhada do
-                        caso. Nosso foco é ampliar suas chances reais de êxito
-                        com clareza.
+                        Os caminhos jurídicos são avaliados conforme cada caso.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <h1 className="motivo-numero">5</h1>
-                    <h1>Comunicação Clara e Direta</h1>
+                    <h1 className="motivo-numero">05</h1>
+                    <h1>Comunicação clara</h1>
                     <li>
                       <p>
-                        Você entende exatamente o que está acontecendo no seu
-                        processo.
+                        Explico possibilidades e próximos passos em linguagem
+                        acessível.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
-                    <h1 className="motivo-numero">6</h1>
-                    <h1>Atuação Nacional</h1>
+                    <h1 className="motivo-numero">06</h1>
+                    <h1>Acompanhamento próximo</h1>
                     <li>
                       <p>
-                        Atendimento presencial em Belo Horizonte e online em
-                        todo o Brasil.
+                        Você recebe informações sobre as etapas e movimentações
+                        da demanda.
                       </p>
                     </li>
                   </div>

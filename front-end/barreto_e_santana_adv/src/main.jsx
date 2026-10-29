@@ -5,6 +5,7 @@ import "./index.scss";
 import App from "./pages/home/App.jsx";
 import Sobre from "./pages/sobre/Sobre.jsx";
 import Politprivac from "./pages/politprivac/Politprivac.jsx";
+import "./styles/responsive.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
