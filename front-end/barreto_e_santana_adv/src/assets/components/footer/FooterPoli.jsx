@@ -9,7 +9,7 @@ import IconeDireitoTrabalhista from "../../icons/business.svg";
 import IconeDireitoFamilia from "../../icons/family2.svg";
 import IconeDireitoPrevidenciario from "../../icons/shield2.svg";
 import IconeDireitoConsumidor from "../../icons/cart2.svg";
-import IconeDireitoBancario from "../../icons/cash2.svg";
+import IconeDireitoTransito from "../../icons/transit2.svg";
 import IconeLocalization from "../../icons/localization.svg";
 import IconePhone from "../../icons/phone2.svg";
 import IconeEmail from "../../icons/mail2.svg";
@@ -96,8 +96,8 @@ const FooterPoli = ({ customStyle }) => {
                 <p>Direito do Consumidor</p>
               </ul>
               <ul>
-                <img src={IconeDireitoBancario} alt="Direito Bancário" />
-                <p>Direito Bancário</p>
+                <img src={IconeDireitoTransito} alt="Direito de Trânsito" />
+                <p>Direito de Trânsito</p>
               </ul>
             </li>
           </div>

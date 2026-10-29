@@ -7,7 +7,7 @@ import IconeDirCivil from "../../assets/icons/civil.svg";
 import IconeFamily from "../../assets/icons/family.svg";
 import IconeShield from "../../assets/icons/shield.svg";
 import IconeCart from "../../assets/icons/cart.svg";
-import IconeCash from "../../assets/icons/cash.svg";
+import IconeTransito from "../../assets/icons/transit.svg";
 import LogoPequena from "../../assets/logo/logonova2.png";
 import IconWorld from "../../assets/icons/world.svg";
 import IconBusiness2 from "../../assets/icons/business2.svg";
@@ -269,19 +269,19 @@ function App() {
                     </li>
                   </div>
                   <div className="area1">
-                    <img src={IconeCash} alt="" />
-                    <h1>Direito Bancário</h1>
+                    <img src={IconeTransito} alt="" />
+                    <h1>Direito de Trânsito</h1>
                     <li>
                       <p>
-                        Atua na defesa dos direitos do consumidor e de empresas
-                        em relações com instituições financeiras.
+                        Atua na orientação e defesa de condutores e proprietários
+                        de veículos em questões relacionadas ao trânsito.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Tem como objetivo resolver questões como juros abusivos,
-                        renegociação de dívidas, contratos bancários e cobranças
-                        indevidas.
+                        Tem como objetivo auxiliar em casos de multas, suspensão
+                        ou cassação da CNH e responsabilidades em acidentes de
+                        trânsito.
                       </p>
                     </li>
                   </div>
