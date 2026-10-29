@@ -200,10 +200,12 @@ header, header.home-header {
 .result-number { font-size: clamp(3rem, 6vw, 5.5rem); }
 
 .feedback-section {
+  background-color: #fff;
   padding: var(--section-space) var(--page-gutter);
+  padding-bottom: 1rem;
   border-bottom-left-radius: clamp(2.5rem, 8vw, 7.5rem);
   border-bottom-right-radius: clamp(2.5rem, 8vw, 7.5rem);
-  h1 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin-top: 0; }
+  h1 { color: #a98c58; font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin-top: 0; }
 }
 .carousel {
   display: grid;
@@ -455,10 +457,10 @@ footer {
   }
 }
 
-// Compact spacing only on Home and Sobre; privacy and footer styles stay unchanged.
+// Section spacing only on Home and Sobre; privacy and footer styles stay unchanged.
 .Topo-inicio ~ section,
 .Topo-sobre ~ section {
-  --section-space: clamp(.75rem, 1.25vw, 1.25rem);
+  --section-space: clamp(2rem, 3.25vw, 3.25rem);
 }
 .Topo-inicio .infos-topo,
-.Topo-sobre .infos-topo { padding-bottom: 1rem; }
+.Topo-sobre .infos-topo { padding-bottom: 2rem; }
