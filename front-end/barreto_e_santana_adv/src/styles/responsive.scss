@@ -202,6 +202,7 @@ header, header.home-header {
 .feedback-section {
   background-color: #fff;
   padding: var(--section-space) var(--page-gutter);
+  padding-bottom: 1rem;
   border-bottom-left-radius: clamp(2.5rem, 8vw, 7.5rem);
   border-bottom-right-radius: clamp(2.5rem, 8vw, 7.5rem);
   h1 { color: #a98c58; font-size: clamp(2rem, 4vw, 4rem); line-height: 1.15; margin-top: 0; }
