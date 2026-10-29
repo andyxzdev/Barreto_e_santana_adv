@@ -51,7 +51,7 @@ const FooterPoli = ({ customStyle }) => {
             <li>
               <ul>
                 <img src={IconePhone} alt="Telefone" />
-                <p>(31) 7205-7198</p>
+                <p>(31) 99183-8165</p>
               </ul>
               <ul>
                 <img src={IconeEmail} alt="Email" />
@@ -61,7 +61,7 @@ const FooterPoli = ({ customStyle }) => {
 
             <button className="ButtonTopo">
               <a
-                href="https://api.whatsapp.com/send?phone=553172057198&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
+                href="https://api.whatsapp.com/send?phone=5531991838165&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -107,7 +107,7 @@ const FooterPoli = ({ customStyle }) => {
             <h1>Localização</h1>
             <li>
               <img src={IconeLocalization} alt="Localização" />
-              <p>Rua Sergipe, 46- Centro (Belo Horizonte)</p>
+              <p>R. 741, 155 - Jardim Vitoria, Belo Horizonte - MG, 31970-643</p>
             </li>
           </div>
           <div className="Links_rapidos_footer">

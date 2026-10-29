@@ -29,7 +29,7 @@ function Politprivac() {
             <div className="contato1">
               <img src={IconPhone} alt="" />
               <p>
-                <p>(31) 7205-7198</p>
+                <p>(31) 99183-8165</p>
               </p>
             </div>
             <div className="contato2">

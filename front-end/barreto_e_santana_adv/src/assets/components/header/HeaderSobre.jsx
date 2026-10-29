@@ -58,7 +58,7 @@ const HeaderSobre = ({ customStyle }) => {
             className="ButtonTopo"
             onClick={() => {
               toggleMenu();
-              window.open("https://wa.me/553172057198", "_blank");
+              window.open("https://wa.me/5531991838165", "_blank");
             }}
           >
             Contato
