@@ -8,7 +8,7 @@ import IconPapper from "../../assets/icons/papper.svg";
 import IconDirCivil from "../../assets/icons/civil.svg";
 import IconHands from "../../assets/icons/hands.svg";
 
-import ImgDra1 from "../../assets/arts/art1.png";
+import ImgDra1 from "../../assets/arts/anna-clara-sobre-sem-dourado.png";
 import ImgMotivos from "../../assets/arts/nova2.jpg";
 
 import HeaderSobre from "../../assets/components/header/HeaderSobre.jsx";

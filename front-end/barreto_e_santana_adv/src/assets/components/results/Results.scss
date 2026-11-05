@@ -6,7 +6,6 @@
   width: 100%;
   height: auto;
   background-color: #1f1f1f;
-  border-radius: 120px 120px 0px 0px;
 
   @include between($md, $lg) {
     height: auto;
@@ -15,7 +14,6 @@
     height: auto;
   }
   @include between($xxs, $xs) {
-    border-radius: 40px 40px 0px 0px;
     margin-top: 40px;
   }
 }

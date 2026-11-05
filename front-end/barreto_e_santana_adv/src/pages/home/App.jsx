@@ -18,7 +18,7 @@ import Arrow from "../../assets/icons/arrow.svg";
 
 import ImgAtendimento from "../../assets/arts/anna-clara-atendimento.png";
 import ImgAreas from "../../assets/arts/nova1.jpg";
-import BannerBaixo from "../../assets/banners/anna-clara-banner.png";
+import BannerBaixo from "../../assets/banners/anna-clara-banner-sem-dourado.png";
 
 import Header from "../../assets/components/header/Header.jsx";
 import "../../assets/components/header/Header.scss";
@@ -173,63 +173,38 @@ function App() {
             <img src={ImgAreas} alt="" className="Img-art" />
             <div className="textoss">
               <div className="titulo" data-aos="fade-up">
-                <h1>Áreas de Atuação</h1>
-                <h3>
-                  Atuamos de forma estratégica nas principais áreas do Direito,
-                  sempre com foco em soluções claras e eficientes.
-                </h3>
+                <h1>O que fazemos pelo seu negócio</h1>
               </div>
 
               <div className="textos-areas">
                 <div className="coluna" data-aos="fade-left">
                   <div className="area1">
                     <img src={IconeDirCivil} alt="" />
-                    <h1>Direito Civil</h1>
+                    <span className="area-number">01</span>
+                    <h1>Revisão de Dívidas Empresariais</h1>
                     <li>
                       <p>
-                        Atua na resolução de conflitos do dia a dia entre
-                        pessoas e empresas, como contratos, cobranças,
-                        indenizações e responsabilidades.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo garantir direitos e deveres nas
-                        relações civis.
+                        Análise criteriosa de passivos, identificando oportunidades de renegociação e redução de encargos para o equilíbrio financeiro da empresa.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
                     <img src={IconeFamily} alt="" />
-                    <h1>Direito de Família</h1>
+                    <span className="area-number">02</span>
+                    <h1>Controle de Passivo Tributário</h1>
                     <li>
                       <p>
-                        Cuida das relações familiares, como divórcio, pensão
-                        alimentícia, guarda de filhos e inventários.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo proteger vínculos, direitos e
-                        interesses das partes envolvidas, com sensibilidade e
-                        responsabilidade.
+                        Gestão estratégica das obrigações fiscais, com mapeamento de riscos e oportunidades para minimizar a carga tributária dentro da legalidade.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
                     <img src={IconBusiness2} alt="" />
-                    <h1>Direito Trabalhista</h1>
+                    <span className="area-number">03</span>
+                    <h1>Negociação Tributária</h1>
                     <li>
                       <p>
-                        Defende os direitos de empregados e empregadores nas
-                        relações de trabalho.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo resolver questões como verbas
-                        rescisórias, horas extras, assédio e acordos
-                        trabalhistas.
+                        Atuação direta em processos de parcelamento, transação tributária e programas de regularização junto às autoridades fiscais.
                       </p>
                     </li>
                   </div>
@@ -237,51 +212,31 @@ function App() {
                 <div className="coluna" data-aos="fade-right">
                   <div className="area1">
                     <img src={IconeShield} alt="" />
-                    <h1>Direito Previdenciário</h1>
+                    <span className="area-number">04</span>
+                    <h1>Contencioso Trabalhista</h1>
                     <li>
                       <p>
-                        Atua na garantia de benefícios do INSS, como
-                        aposentadorias, pensões e auxílios.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo assegurar proteção e estabilidade
-                        financeira em momentos importantes da vida.
+                        Defesa técnica e estratégica em ações trabalhistas, com foco na proteção dos interesses da empresa e na gestão eficiente de litígios.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
                     <img src={IconeCart} alt="" />
-                    <h1>Direito do Consumidor</h1>
+                    <span className="area-number">05</span>
+                    <h1>Análise de Contratos Empresariais</h1>
                     <li>
                       <p>
-                        Protege o consumidor em relações de compra e prestação
-                        de serviços.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo resolver problemas como cobranças
-                        indevidas, produtos com defeito e falhas na prestação de
-                        serviços.
+                        Revisão, elaboração e negociação de contratos, assegurando segurança jurídica em todas as relações comerciais da sua empresa.
                       </p>
                     </li>
                   </div>
                   <div className="area1">
                     <img src={IconeTransito} alt="" />
-                    <h1>Direito de Trânsito</h1>
+                    <span className="area-number">06</span>
+                    <h1>Assessoria Jurídica Preventiva</h1>
                     <li>
                       <p>
-                        Atua na orientação e defesa de condutores e proprietários
-                        de veículos em questões relacionadas ao trânsito.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Tem como objetivo auxiliar em casos de multas, suspensão
-                        ou cassação da CNH e responsabilidades em acidentes de
-                        trânsito.
+                        Acompanhamento contínuo da empresa para antecipar riscos, orientar decisões e garantir conformidade legal em todas as operações.
                       </p>
                     </li>
                   </div>
