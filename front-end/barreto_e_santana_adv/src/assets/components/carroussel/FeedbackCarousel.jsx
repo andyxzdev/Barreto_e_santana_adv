@@ -98,6 +98,10 @@ export default function FeedbackCarousel() {
   return (
     <section className="feedback-section">
       <h1>O que nossos clientes dizem</h1>
+      <div className="google-reviews-brand" aria-label="Avaliações no Google">
+        <span className="google-g">G</span>
+        <span>Google</span>
+      </div>
 
       <div className="carousel">
         <button className="nav prev" onClick={prev}>
@@ -117,6 +121,7 @@ export default function FeedbackCarousel() {
                     <strong>{item.name}</strong>
                     <span>{item.role}</span>
                   </div>
+                  <span className="google-g" aria-hidden="true">G</span>
                 </div>
 
                 <p>“{item.text}”</p>
