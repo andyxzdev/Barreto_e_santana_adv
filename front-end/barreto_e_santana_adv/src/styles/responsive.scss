@@ -110,7 +110,7 @@ header, header.home-header {
 .Atendimento {
   margin: 0;
   padding: var(--section-space) var(--page-gutter);
-  padding-top: clamp(5rem, 9vw, 9rem);
+  padding-top: clamp(2rem, 4vw, 4rem);
   .infos {
     max-width: var(--content-width);
     margin: 0 auto;
@@ -210,6 +210,22 @@ header, header.home-header {
     li { margin-top: 1rem; p { font-size: clamp(.9rem, 1.1vw, 1.1rem); } }
     img { width: 1.5rem; }
     .motivo-numero { font-size: clamp(2.5rem, 4vw, 4rem); }
+  }
+}
+.Areas .infos .textos .textos_areas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+  .coluna { display: contents; }
+  .area1 {
+    min-height: 16rem;
+    height: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .Areas .infos .textos .textos_areas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -409,11 +425,13 @@ footer {
 }
 @media (max-width: 960px) {
   .Atendimento .infos .texto_e_imagem,
-  .Areass .infos, .Areas .infos, .Formulario .infoss, .Sobre .infos .adv1 {
+  .Areass .infos, .Areas .infos, .Formulario .infoss, .Sobre .infos .adv1,
+  .Equipe .infos {
     grid-template-columns: minmax(0, 1fr);
   }
   .Atendimento .infos .texto_e_imagem > img,
-  .Areass .infos > .Img-art, .Areas .infos > img, .Sobre .infos .adv1 .Img_dra1 {
+  .Areass .infos > .Img-art, .Areas .infos > img, .Sobre .infos .adv1 .Img_dra1,
+  .Equipe .infos > img {
     width: min(100%, 34rem);
     justify-self: center;
   }
@@ -474,7 +492,7 @@ footer {
 @media (max-width: 480px) {
   .home-contact-bar { gap: .25rem; }
   .Areass .infos .textoss .textos-areas { grid-template-columns: minmax(0, 1fr); }
-  .Areas .infos .textos .textos_areas .coluna { grid-template-columns: minmax(0, 1fr); }
+  .Areas .infos .textos .textos_areas { grid-template-columns: minmax(0, 1fr); }
   .carousel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     .nav { width: 2.5rem; height: 2.5rem; }
