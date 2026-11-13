@@ -10,6 +10,7 @@ import IconHands from "../../assets/icons/hands.svg";
 
 import ImgDra1 from "../../assets/arts/anna-clara-sobre-sem-dourado.png";
 import ImgMotivos from "../../assets/arts/nova2.jpg";
+import ImgEquipe from "../../assets/arts/nova3.jpg";
 
 import HeaderSobre from "../../assets/components/header/HeaderSobre.jsx";
 import "../../assets/components/header/Header.scss";
@@ -55,30 +56,36 @@ function Sobre() {
         </section>
 
         <section className="Sobre" id="associados">
-          <div className="Titulo">
-            <h1 data-aos="fade-up">
-              Conheça Anna Clara, Advogada Trabalhista
-            </h1>
-          </div>
-
           <div className="infos">
             <div className="adv1">
               <div className="texto" data-aos="fade-left">
-                <h1>Dra. Anna Clara Barreto</h1>
+                <h1>Conheça Anna Clara, Advogada Trabalhista</h1>
                 <li>
                   <h3>
-                    Advogada e pós-graduanda em Direito Civil e Processo Civil,
-                    com atuação estratégica nas áreas Cível, Empresarial e
-                    Contratual. Conduzo cada caso com técnica, ética e foco em
-                    soluções jurídicas seguras e eficazes.
+                    Advogada com atuação especializada em Direito do Trabalho,
+                    com pós-graduação em Direito e Processo do Trabalho.
                   </h3>
                 </li>
                 <li>
                   <h3>
-                    Atuo na elaboração e revisão de contratos, análise de riscos
-                    e orientação jurídica para pessoas e empresas. Meu trabalho
-                    é pautado em responsabilidade, precisão técnica e atenção às
-                    necessidades práticas de cada cliente.
+                    Atuo na defesa dos direitos dos trabalhadores, oferecendo
+                    uma advocacia estratégica, ética e comprometida com soluções
+                    jurídicas eficazes.
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    Minha atuação abrange reclamações trabalhistas,
+                    reconhecimento de vínculo empregatício, verbas rescisórias,
+                    horas extras, rescisão indireta, estabilidade gestacional e
+                    demais questões relacionadas às relações de trabalho.
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    Meu trabalho é pautado na responsabilidade, precisão técnica
+                    e atendimento individualizado, buscando a proteção dos
+                    direitos e interesses de cada cliente.
                   </h3>
                 </li>
               </div>
@@ -89,6 +96,35 @@ function Sobre() {
                 data-aos="fade-right"
               />
             </div>
+          </div>
+        </section>
+
+        <section className="Equipe" id="equipe">
+          <div className="infos">
+            <div className="texto" data-aos="fade-left">
+              <h1>Conheça nossa equipe</h1>
+              <p>
+                A equipe Anna Clara Barreto - Advogados atua em diversas áreas
+                do Direito, com destaque para o Direito do Trabalho. Oferecemos
+                um atendimento próximo, com orientações claras e soluções
+                jurídicas pensadas para a realidade de cada cliente.
+              </p>
+              <p>
+                Se você enfrenta um problema no trabalho, na família, em uma
+                relação de consumo ou em outra área da sua vida, nossa equipe
+                está pronta para ouvir o que aconteceu, esclarecer suas dúvidas
+                e avaliar com você os caminhos possíveis. Cada caso tem uma
+                história que merece atenção e respeito. Por isso, conduzimos
+                cada demanda com responsabilidade, transparência e firmeza na
+                defesa dos seus interesses.
+              </p>
+              <p>
+                Do primeiro atendimento ao acompanhamento de cada etapa,
+                ajudamos você a entender seus direitos e suas opções para tomar
+                decisões com segurança.
+              </p>
+            </div>
+            <img src={ImgEquipe} alt="Equipe de advogados" data-aos="fade-right" />
           </div>
         </section>
 

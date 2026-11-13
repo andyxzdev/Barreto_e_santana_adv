@@ -339,6 +339,44 @@
   }
 }
 
+.Equipe {
+  width: 100%;
+  padding: 8vh 80px;
+  background-color: #1f1f1f;
+
+  .infos {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--layout-gap);
+
+    .texto {
+      h1 {
+        color: #f4df8f;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        color: #fff;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        font-weight: 300;
+        line-height: 1.7;
+        margin: 1rem 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
+
 .Areas {
   width: 100%;
   height: auto;

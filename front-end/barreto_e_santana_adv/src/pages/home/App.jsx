@@ -181,64 +181,70 @@ function App() {
                   <div className="area1">
                     <img src={IconeDirCivil} alt="" />
                     <span className="area-number">01</span>
-                    <h1>Revisão de Dívidas Empresariais</h1>
+                    <h1>Direito Civil</h1>
                     <li>
                       <p>
-                        Análise criteriosa de passivos, identificando oportunidades de renegociação e redução de encargos para o equilíbrio financeiro da empresa.
+                        Atua na resolução de conflitos do dia a dia entre pessoas e empresas, como contratos, cobranças, indenizações e responsabilidades.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo garantir direitos e deveres nas relações civis.</p></li>
                   </div>
                   <div className="area1">
                     <img src={IconeFamily} alt="" />
                     <span className="area-number">02</span>
-                    <h1>Controle de Passivo Tributário</h1>
+                    <h1>Direito de Família</h1>
                     <li>
                       <p>
-                        Gestão estratégica das obrigações fiscais, com mapeamento de riscos e oportunidades para minimizar a carga tributária dentro da legalidade.
+                        Cuida das relações familiares, como divórcio, pensão alimentícia, guarda de filhos e inventários.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo proteger vínculos, direitos e interesses das partes envolvidas, com sensibilidade e responsabilidade.</p></li>
                   </div>
                   <div className="area1">
                     <img src={IconBusiness2} alt="" />
                     <span className="area-number">03</span>
-                    <h1>Negociação Tributária</h1>
+                    <h1>Direito Trabalhista</h1>
                     <li>
                       <p>
-                        Atuação direta em processos de parcelamento, transação tributária e programas de regularização junto às autoridades fiscais.
+                        Defende os direitos de empregados e empregadores nas relações de trabalho.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo resolver questões como verbas rescisórias, horas extras, assédio e acordos trabalhistas.</p></li>
                   </div>
                 </div>
                 <div className="coluna" data-aos="fade-right">
                   <div className="area1">
                     <img src={IconeShield} alt="" />
                     <span className="area-number">04</span>
-                    <h1>Contencioso Trabalhista</h1>
+                    <h1>Direito Previdenciário</h1>
                     <li>
                       <p>
-                        Defesa técnica e estratégica em ações trabalhistas, com foco na proteção dos interesses da empresa e na gestão eficiente de litígios.
+                        Atua na garantia de benefícios do INSS, como aposentadorias, pensões e auxílios.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo assegurar proteção e estabilidade financeira em momentos importantes da vida.</p></li>
                   </div>
                   <div className="area1">
                     <img src={IconeCart} alt="" />
                     <span className="area-number">05</span>
-                    <h1>Análise de Contratos Empresariais</h1>
+                    <h1>Direito do Consumidor</h1>
                     <li>
                       <p>
-                        Revisão, elaboração e negociação de contratos, assegurando segurança jurídica em todas as relações comerciais da sua empresa.
+                        Protege o consumidor em relações de compra e prestação de serviços.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo resolver problemas como cobranças indevidas, produtos com defeito e falhas na prestação de serviços.</p></li>
                   </div>
                   <div className="area1">
                     <img src={IconeTransito} alt="" />
                     <span className="area-number">06</span>
-                    <h1>Assessoria Jurídica Preventiva</h1>
+                    <h1>Direito de Trânsito</h1>
                     <li>
                       <p>
-                        Acompanhamento contínuo da empresa para antecipar riscos, orientar decisões e garantir conformidade legal em todas as operações.
+                        Atua na orientação e defesa de condutores e proprietários de veículos em questões relacionadas ao trânsito.
                       </p>
                     </li>
+                    <li><p>Tem como objetivo auxiliar em casos de multas, suspensão ou cassação da CNH e responsabilidades em acidentes de trânsito.</p></li>
                   </div>
                 </div>
               </div>
